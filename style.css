@@ -1,0 +1,77 @@
+/*Estilo geral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(to right, #4340ff, #7235c2);
+  height: 100vh;
+  display: block;
+  overflow: hidden;
+}
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
+.btn button {
+  padding: 10px 40px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #FF3C5F;
+  background: linear-gradient(to right, #FF3C5F, #9340ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+  height: 80px;
+  color: white;
+}
+button:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 8px #9340ff;
+  transform: scale(1.05);
+}
+.container2{
+  margin-left: 30px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; 
+}
+.flex{
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; 
+}
+/* ESTILO DO TOPO DO SITE */
+.interface{
+  padding: 0px 4%;
+  margin-top: 0%;
+  justify-content: center;
+  height: 100%;
+}
+.interface .flex {
+  align-items: center;
+  justify-content: center;
+  
+}
+.interface h1 {
+  color: #ffffff;
+  font-size: 110px;
+  line-height: 40px;
+}
+.interface .container h3 {
+  color: #ffffff;
+  margin: 40px 0px;
+  font-size: 60px;
+}
+span{
+  font-style: italic;
+}
