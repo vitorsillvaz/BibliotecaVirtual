@@ -159,6 +159,12 @@ button:hover {
   justify-content: center;
   padding: 10px;
 }
+.corpo-do-site h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  background-color: #0011ff5e;
+}
 .livro {
   width: 250px;
   margin: 0px;
