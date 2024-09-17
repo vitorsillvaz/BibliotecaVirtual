@@ -62,7 +62,6 @@ a:hover{
   color: #270158;
 }
 .menu {
-  border-radius: 20px;
   align-items: center;
   justify-content: center;
   height: 80px;
@@ -208,4 +207,10 @@ button:hover {
   font-size: 20px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  margin-top: 50px;
+}
+span{
+  color:#3533b8;
 }

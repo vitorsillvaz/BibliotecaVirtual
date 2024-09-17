@@ -10,6 +10,7 @@ body {
   background-color:aliceblue;
   height: 100%;
   display: block;
+  overflow: hidden;
 }
 h1 {
   color: white;
@@ -61,7 +62,6 @@ a:hover{
   color: #270158;
 }
 .menu {
-  border-radius: 20px;
   align-items: center;
   justify-content: center;
   height: 80px;

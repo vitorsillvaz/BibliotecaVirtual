@@ -1,177 +1,221 @@
-
-/*Estilo geral*/
+/*Estilo geral para todos os elementos*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  box-sizing: border-box; /* Garante que a largura e altura incluam o padding e a borda */
+  font-family: "Poppins", sans-serif; /* Define a fonte padrão para "Poppins" */
 }
+
+/*Estilo para o body da página*/
 body {
-  background-color:aliceblue;
-  height: 100%;
-  display: block;
-  overflow: hidden;
+  background-color: aliceblue; /* Define a cor de fundo da página */
+  height: 100%; /* Define a altura total do body */
+  display: block; /* Garante que o body seja exibido como um bloco */
+  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o tamanho da tela */
 }
+
+/*Estilo para todos os h1 (títulos de nível 1)*/
 h1 {
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white; /* Define a cor do texto como branca */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Define a família de fontes */
 }
+
+/*Estilo para todos os h3 (títulos de nível 3)*/
 h3 {
-  font-size: 20px;
-  margin-left: 0px;
-  color: white;
-  padding: 0px;
+  font-size: 20px; /* Define o tamanho da fonte */
+  margin-left: 0px; /* Remove a margem à esquerda */
+  color: white; /* Define a cor do texto como branca */
+  padding: 0px; /* Remove o preenchimento interno */
 }
-.icone_livros {
-  width: 24px;
-}
+
+/*Estilo para a seção do logo*/
 .logo {
-  padding: 0;
-  text-align: left;
-  margin-left: 20px;
-  width: 200px;
-  height: 200px;
-  background-color: #6055c700;
-  display: flex;
+  padding: 0; /* Remove o preenchimento interno */
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  width: 200px; /* Define a largura do logo */
+  height: 200px; /* Define a altura do logo */
+  background-color: #6055c700; /* Define uma cor de fundo transparente */
 }
-.log{
-  height: 200px;
-  width: 200px;
+
+/*Estilo para a imagem do logo*/
+.log {
+  height: 200px; /* Define a altura da imagem */
+  width: 200px; /* Define a largura da imagem */
 }
-ul{
-  margin-top: 20px;
+
+/*Estilo para listas não ordenadas (ul)*/
+ul {
+  margin-top: 20px; /* Define uma margem superior de 20px */
 }
-li{
-  display: flex;
-  align-items: center; /* Centraliza o conteúdo verticalmente */
-  height: 50px; /* Ajuste a altura como necessário */
+
+/*Estilo para itens de lista (li)*/
+li {
+  display: flex; /* Usa layout flexível */
+  align-items: center; /* Centraliza verticalmente o conteúdo dentro do item */
+  height: 50px; /* Define a altura do item */
 }
-li:hover{
-  background-color: aliceblue;
-  border-radius: 50px;
+
+/*Estilo ao passar o mouse sobre itens de lista*/
+li:hover {
+  background-color: aliceblue; /* Altera a cor de fundo ao passar o mouse */
+  border-radius: 50px; /* Arredonda as bordas do item */
 }
+
+/*Estilo para links (a)*/
 a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  display: block;
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: rgb(0, 0, 0); /* Define a cor do texto do link */
+  display: block; /* Exibe o link como um bloco */
 }
-.a-li{
-  margin-left: 5px;
+/*Estilo ao passar o mouse sobre links*/
+a:hover {
+  color: #270158; /* Altera a cor do texto ao passar o mouse */
 }
-a:hover{
-  color: #270158;
-}
+
+/*Estilo para o menu principal*/
 .menu {
-  border-radius: 20px;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  display: flex;
-  background: linear-gradient(to right, #4340ff, #7235c2);
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  height: 80px; /* Define a altura do menu */
+  display: flex; /* Usa layout flexível */
+  background: linear-gradient(to right, #4340ff, #7235c2); /* Aplica um gradiente de fundo */
 }
+
+/*Estilo para o formulário de pesquisa*/
 .form-pesquisa {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  justify-items: center;
+  display: flex; /* Usa layout flexível */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  justify-items: center; /* Alinha os itens horizontalmente */
 }
+
+/*Estilo para o campo de entrada do formulário*/
 form input {
-  width: 100%;
-  height: 50px;
-  background-color: #ffffff;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
-  padding-left: 20px;
-  margin: 0 auto;
-}
-form input:hover{
-  transition: 0.1s;
-  transform: scale(1.05);
-}
-i:hover{
-  transition: 0.1s;
-  transform: scale(1.2) ;
-}
-.i1{
-  color: #ffffff;
-  padding-top: 7px;
-  padding-left: 3px;
-  font-size: 30px;
-}
-.btn button {
-  margin-top: 20px;
-  padding: 10px 0px;
-  font-size: 15px;
-  background: linear-gradient(to right, #4340ff, #9340ff);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 50%;
-  height: 80%;
-  color: white;
-}
-.btn{
-  text-align: center;
-  margin: 0 auto;
-}
-.i2{
-  color: #3533b8;
-  font-size: 20px;
-  margin-top: 10px;
-  text-align: center;
-}
-button:hover {
-  box-shadow: 0px 0px 3px #28262bce;
-  transform: scale(1.05);
-  transition: .01s;
-}
-.lista{
-  width: 20%;
-}
-.biblioteca {
-  background: linear-gradient(to right,  rgba(0, 140, 255, 0.13), #9340ff25);
-  width: 80%; /* Define a largura da div */
+  width: 100%; /* Define a largura total */
+  height: 50px; /* Define a altura do campo */
+  background-color: #ffffff; /* Define a cor de fundo branca */
+  border: none; /* Remove bordas */
+  outline: none; /* Remove a borda ao focar no campo */
+  border-radius: 50px; /* Arredonda as bordas do campo */
+  color: rgb(0, 0, 0); /* Define a cor do texto */
+  font-size: 25px; /* Define o tamanho da fonte */
+  padding-left: 20px; /* Adiciona preenchimento à esquerda */
   margin: 0 auto; /* Centraliza horizontalmente */
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 100px;
-  border-radius: 50px;
 }
+
+/*Efeito ao passar o mouse sobre o campo de entrada*/
+form input:hover {
+  transition: 0.1s; /* Adiciona uma transição suave */
+  transform: scale(1.05); /* Aumenta ligeiramente o campo */
+}
+
+/*Efeito ao passar o mouse sobre ícones*/
+i:hover {
+  transition: 0.1s; /* Adiciona uma transição suave */
+  transform: scale(1.2); /* Aumenta ligeiramente o ícone */
+}
+
+/*Estilo específico para ícones com a classe 'i1'*/
+.i1 {
+  color: #ffffff; /* Define a cor do ícone como branca */
+  padding-top: 7px; /* Adiciona preenchimento superior */
+  padding-left: 3px; /* Adiciona preenchimento à esquerda */
+  font-size: 30px; /* Define o tamanho da fonte (ícone) */
+}
+
+/*Estilo para o botão dentro da classe 'btn'*/
+.btn button {
+  margin-top: 20px; /* Define a margem superior */
+  padding: 10px 0px; /* Adiciona preenchimento interno vertical */
+  font-size: 15px; /* Define o tamanho da fonte */
+  background: linear-gradient(to right, #4340ff, #9340ff); /* Aplica um gradiente de fundo */
+  border: none; /* Remove a borda */
+  border-radius: 30px; /* Arredonda as bordas do botão */
+  cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+  transition: 0.3s; /* Adiciona uma transição suave */
+  width: 50%; /* Define a largura como 50% */
+  height: 80%; /* Define a altura como 80% */
+  color: white; /* Define a cor do texto como branca */
+}
+
+/*Estilo para a div com a classe 'btn'*/
+.btn {
+  text-align: center; /* Centraliza o conteúdo */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/*Estilo para ícones com a classe 'i2'*/
+.i2 {
+  color: #3533b8; /* Define a cor dos ícones */
+  font-size: 20px; /* Define o tamanho da fonte (ícones) */
+  margin-top: 10px; /* Define uma margem superior */
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/*Efeito ao passar o mouse sobre botões*/
+button:hover {
+  box-shadow: 0px 0px 3px #28262bce; /* Adiciona uma sombra ao botão */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  transition: .01s; /* Adiciona uma transição rápida */
+}
+
+/*Estilo para listas com a classe 'lista'*/
+.lista {
+  width: 20%; /* Define a largura como 20% */
+}
+
+/*Estilo para a div com a classe 'biblioteca'*/
+.biblioteca {
+  background: linear-gradient(to right, rgba(0, 140, 255, 0.13), #9340ff25); /* Aplica um gradiente de fundo */
+  width: 80%; /* Define a largura como 80% */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: flex; /* Usa layout flexível */
+  text-align: center; /* Centraliza o texto */
+  justify-content: center; /* Centraliza o conteúdo */
+  padding: 100px; /* Adiciona preenchimento interno */
+  border-radius: 50px; /* Arredonda as bordas */
+}
+
+/*Estilo para a imagem da coruja*/
 .coruja {
-  height: 270px;
-  width: 100%;
-  border-radius: 10px;
+  height: 500px; /* Define a altura da imagem */
+  width: 100%; /* Define a largura da imagem */
+  border-radius: 10px; /* Arredonda as bordas */
 }
-.flex{
-  display: flex;
-  height: 100%;
+
+/*Estilo para elementos com a classe 'flex'*/
+.flex {
+  display: flex; /* Usa layout flexível */
+  height: 100%; /* Define a altura total */
 }
-.corpo-do-site{
-  margin: 0 auto;
-  padding: 50px;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
+
+/*Estilo para a div com a classe 'corpo-do-site'*/
+.corpo-do-site {
+  margin: 0 auto; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
-.cadastro{
-  padding: 20px;
-  width: 50%;
-  margin: 0px;
-  text-align: center;
+
+/*Estilo para a div com a classe 'cadastro'*/
+.cadastro {
+  border: 1px solid; /* Define uma borda sólida */
+  width: 50%; /* Define a largura como 50% */
+  margin: 0px; /* Remove a margem */
+  text-align: center; /* Centraliza o texto */
+  align-items: center; /* Centraliza verticalmente */
+  border-radius: 20px; /* Arredonda as bordas */
+  padding-top: 60px; /* Adiciona preenchimento superior */
 }
-.form-cadastro{
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+
+/*Estilo para a div com a classe 'form-cadastro'*/
+.form-cadastro {
+  width: 80%; /* Define a largura como 80% */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
 }
-#no, #em , #se{
-  border: 1px solid #2b332f;
-  margin-top: 2px;
-  font-size: 15px;
-  width: 300px;
+
+/*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
+#no, #em, #se {
+  border: 1px solid #2b332f; /* Define a borda dos campos */
+  margin-top: 2px; /* Adiciona uma margem superior */
+  font-size: 15px; /* Define o tamanho da fonte */
+  width: 300px; /* Define a largura dos campos */
 }
