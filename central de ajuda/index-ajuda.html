@@ -1,94 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblioteca</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="icon" href="icone_livros.png" whith="100px" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <main class="principal">
-      <div class="menu">
-        <div class="logo">
-          <a href="/index.html"><img class="log" src="/Sem título (1).png" /></a>
-        </div>
-        <!--fim da div logo-->
-        <div class="form">
-          <form class="form-p">
-            <input type="text" placeholder="Digite sua pesquisa" />
-          </form>
-          <i class="fas fa-search i1"></i>
-        </div>
-        <!--fim da div form-->
-      </div>
-      <!--Fim da div menu-->
-      <main class="flex">
-        <div class="lista">
-          <nav>
-            <div class="opcoes">
-              <ul>
-                <li><a class="a-li" href="/comédia/index.html">Comédia</a></li>
-                <li><a class="a-li" href="/romance/index.html">Romance</a></li>
-                <li><a class="a-li" href="/ação/index.html">Ação</a></li>
-                <li><a class="a-li" href="/suspense/index.html">Suspense</a></li>
-                <li><a class="a-li" href="#">Recomendações</a></li>
-                <li><a class="a-li" href="/sobre/index.html">Sobre</a></li>
-                <li id="ajd"><a class="a-li" href="/central de ajuda/index-ajuda.html">Ajuda</a></li>
-                <li><a class="a-li" href="#">Contato</a></li>
-              </ul>
-              <!--fim da ul-->
-            </div>
-            <!--fim da div opcoes-->
-            <hr size="1" />
-          </nav>
-          <!--fim da nav-->
-        </div>
-        <!--fim da div lista-->
 
-        <div class="corpo-do-site">
-           <div class="chat">
-         <table style="width: 100%; text-align: center;">
-          <tr>
-          <td>
-            <h2 class="titulo">Chat - Central de ajuda</h2>
-            <hr size="1">
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <div class="minhas-msg" style="display: flex;">
-              <i class="fa-solid fa-circle-user i2" style="font-size: 40px"></i>  
-            <h4 class="eu">Olá, tudo bem? <br> No que posso ajudar?</h4>
-            </div>
-          </th>
-        </tr>
-        </table><!--fim da tabela-->
-           </div> <!--fim da div chat-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>System.book</title>
+  <link rel="icon" href="/imagens/icone_livros.png" whith="100px" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!--esse link é para importar os icones-->
+</head>
+
+<body>
+  <main class="principal">
+    <div class="menu">
+      <!--na div 'logo' está a logo do site dentro de um link, que ao clicar, direciona para a página de cadastro.-->
+      <div class="logo">
+        <a href="/index.html"><img class="log" src="/Sem título (1).png" /></a>
+      </div>
+      <!--fim da div logo-->
+      <!--dentro da div 'form', adicionamos um form junto de um input(do tipo 'text') para ilustrar um campo de pesquisa-->
+      <div class="form">
+        <form>
+          <input type="text" placeholder="Digite sua pesquisa" />
+          <!--o comando 'placeholder' serve para colocar uma mensagem dentro do input-->
+        </form>
+        <i class="fas fa-search i1"></i>
+        <!--icone de lupa-->
+      </div>
+      <!--fim da div form-->
+    </div>
+    <!--Fim da div menu-->
+    <main class="flex">
+      <div class="lista">
+        <nav>
+          <div class="opcoes"> <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->
+            <ul>
+              <li><a class="a-li" href="/comédia/index.html">Comédia</a></li>
+              <!--direciona para a página comedia-->
+              <li><a class="a-li" href="/romance/index.html">Romance</a></li>
+              <!--direciona para a página romance-->
+              <li id="co"><a class="a-li" href="/ação/index.html">Ação</a></li>
+              <!--direciona para a página ação-->
+              <li><a class="a-li" href="/suspense/index.html">Suspense</a></li>
+              <!--direciona para a página suspense-->
+              <li><a class="a-li" href="#">Recomendações</a></li>
+              <!-- está só de ilustração, pois não criamos essa página-->
+              <li><a class="a-li" href="/sobre/index.html">Sobre</a></li>
+              <!--direciona para a página sobre-->
+              <li><a class="a-li" href="/central de ajuda/index-ajuda.html">Ajuda</a></li>
+              <!--direciona para a página de Ajuda-->
+              <li><a class="a-li" href="#">Contato</a></li>
+              <!-- está só de ilustração, pois não criamos essa página-->
+            </ul>
+            <!--fim da ul-->
+          </div>
+          <!--fim da div opcoes-->
+          <hr size="1" />
+        </nav>
+        <!--fim da nav-->
+      </div>
+      <!--fim da div lista-->
+
+      <div class="corpo-do-site">
+        <div class="chat"><!--criamos uma tabela para ilustrar um chat(bate-papo)-->
+          <table style="width: 100%; text-align: center;">
+            <tr>
+              <td><!--titulo do chat-->
+                <h2 class="titulo">Chat - Central de ajuda</h2>
+                <hr size="1">
+              </td>
+            </tr>
+            <tr>
+              <th><!--coluna ilustrando uma mensagem enviada-->
+                <div class="minhas-msg" style="display: flex;">
+                  <i class="fa-solid fa-circle-user i2" style="font-size: 40px"></i>
+                  <h4 class="eu">Olá, tudo bem? <br> No que posso ajudar?</h4>
+                </div>
+              </th>
+            </tr>
+          </table><!--fim da tabela-->
+        </div> <!--fim da div chat-->
+
         <div class="msg">
-              <form class="form-cadastro" action="">
-                <input type="text" id="no" placeholder="Envie sua mensagem:" required/>   
-                <input id="env" type="submit" value="Enviar" style="width: 80px;">
+          <form class="form-cadastro" action=""><!--form ilustrando um campo para enviar mensagem-->
+            <input type="text" id="no" placeholder="Envie sua mensagem:" required />
+            <input id="env" type="submit" value="Enviar" style="width: 80px;">
         </div><!--fim da div msg-->
-              <div class="i2">
-                <i class="fa-brands fa-instagram i2"></i>
-                <i class="fa-brands fa-facebook i2"></i>
-                <i class="fa-brands fa-google i2"></i>
-                <i class="fa-brands fa-youtube i2"></i>
-                <i class="fa-brands fa-linkedin i2"></i>
-              </div><!--fim da div i2-->
-        </div><!--fim da div corpo-do-site -->
-      </main>
-      <!--fim da main flex-->
+
+        <div class="i2"><!--icones das redes sociais-->
+          <i class="fa-brands fa-instagram i2"></i>
+          <i class="fa-brands fa-facebook i2"></i>
+          <i class="fa-brands fa-google i2"></i>
+          <i class="fa-brands fa-youtube i2"></i>
+          <i class="fa-brands fa-linkedin i2"></i>
+        </div><!--fim da div i2-->
+      </div><!--fim da div corpo-do-site -->
     </main>
-    <!--fim main principal-->
-  </body>
+    <!--fim da main flex-->
+  </main>
+  <!--fim main principal-->
+</body>
+
 </html>

@@ -7,27 +7,27 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color:aliceblue;
-  height: 100%;
+  background-color:aliceblue; /*cor do fundo*/
+  height: 100%;/*define a altura*/
   display: block;
   overflow: hidden;
 }
 h1 {
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;/*cor do texto branco*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;/*fonte do texto*/
 }
 h3 {
-  font-size: 20px;
-  margin-left: 0px;
+  font-size: 20px;/*tamanho da fonte*/
+  margin-left: 0px;/*sem margem a esquerda*/
   color: white;
   padding: 0px;
 }
 .icone_livros {
-  width: 24px;
+  width: 24px;/*largura*/
 }
 .logo {
   padding: 0;
-  text-align: left;
+  text-align: left;/*alinha o texto na esquerda*/
   margin-left: 20px;
   width: 200px;
   height: 200px;
@@ -51,7 +51,7 @@ li:hover{
   border-radius: 50px;
 }
 a {
-  text-decoration: none;
+  text-decoration: none;/*remove o sunblinhado do link*/
   color: rgb(0, 0, 0);
   display: block;
 }
@@ -71,8 +71,8 @@ a:hover{
 .form {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
-  justify-items: center;
+  justify-content: center;/*centraliza*/
+  justify-items: center;/*centraliza os itens*/
 }
 form input {
   width: 100%;
@@ -80,14 +80,14 @@ form input {
   background-color: #ffffff;
   border: none;
   outline: none;
-  border-radius: 50px;
+  border-radius: 50px;/*borda arredondada*/
   color: rgb(0, 0, 0);
   font-size: 25px;
   padding-left: 20px;
 }
 form input:hover{
-  transition: 0.1s;
-  transform: scale(1.05);
+  transition: 0.1s;/* Define a duração da transição */
+  transform: scale(1.05);/* Aumenta ligeiramente */
 }
 i:hover{
   transition: 0.1s;
@@ -142,7 +142,7 @@ button:hover {
 .lista{
   width: 20%;
 }
-.biblioteca {
+.descricao {
   width: 100%; /* Define a largura da div */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex;
@@ -164,34 +164,7 @@ button:hover {
   margin-top: 50px;
   width: 90%;
 }
-.cadastro{
-  border-radius: 15px;
-  height: 600px;
-  width: 100%;
-  margin: 0px;
-}
-.form-cadastro{
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-}
-#no{
-  border: 1px solid #2b332f;
-  margin-top: 2px;
-  font-size: 15px;
-  width: 100%;
-  text-align: left;
-  
-}
-#ajd{
-  background-color: #3533b8;
-  border-radius: 50px;
-}
-#ajd > a{
-   color: #ffffff;
-}
-.chat{
+.infos{
   border-radius: 20px;
   width: 80%;
   background-color: #ffffff;
