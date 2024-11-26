@@ -64,7 +64,7 @@ li:hover {
 /*Estilo para links (a)*/
 a {
   text-decoration: none; /* Remove sublinhado dos links */
-  color: rgb(0, 0, 0); /* Define a cor do texto do link */
+  color: rgb(255, 255, 255); /* Define a cor do texto do link */
   display: block; /* Exibe o link como um bloco */
 }
 /*Estilo ao passar o mouse sobre links*/
@@ -78,7 +78,7 @@ a:hover {
   justify-content: center; /* Centraliza o conteúdo horizontalmente */
   height: 80px; /* Define a altura do menu */
   display: flex; /* Usa layout flexível */
-  background: linear-gradient(to right, #4340ff, #7235c2); /* Aplica um gradiente de fundo */
+  background: linear-gradient(to right, #000000, #000000); /* Aplica um gradiente de fundo */
 }
 
 /*Estilo para o formulário de pesquisa*/
@@ -127,7 +127,7 @@ i:hover {
   margin-top: 20px; /* Define a margem superior */
   padding: 10px 0px; /* Adiciona preenchimento interno vertical */
   font-size: 15px; /* Define o tamanho da fonte */
-  background: linear-gradient(to right, #4340ff, #9340ff); /* Aplica um gradiente de fundo */
+  background: linear-gradient(to right, #000000, #000000); /* Aplica um gradiente de fundo */
   border: none; /* Remove a borda */
   border-radius: 30px; /* Arredonda as bordas do botão */
   cursor: pointer; /* Altera o cursor ao passar sobre o botão */
@@ -145,7 +145,7 @@ i:hover {
 
 /*Estilo para ícones com a classe 'i2'*/
 .i2 {
-  color: #3533b8; /* Define a cor dos ícones */
+  color: #000000; /* Define a cor dos ícones */
   font-size: 20px; /* Define o tamanho da fonte (ícones) */
   margin-top: 10px; /* Define uma margem superior */
   text-align: center; /* Centraliza o conteúdo */

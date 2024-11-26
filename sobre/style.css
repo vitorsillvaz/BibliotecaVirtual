@@ -66,7 +66,7 @@ a:hover{
   justify-content: center;
   height: 80px;
   display: flex;
-  background: linear-gradient(to right, #4340ff, #7235c2);
+  background: linear-gradient(to right, #000000, #000000);
 }
 .form {
   display: flex;
@@ -112,7 +112,7 @@ nav{
 }
 .btn button {
   font-size: 15px;
-  background: linear-gradient(to right, #4340ff, #9340ff);
+  background: linear-gradient(to right, #000000, #000000);
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -129,7 +129,7 @@ nav{
   text-align: center;
 }
 .i2{
-  color: #3533b8;
+  color: #000000;
   font-size: 30px;
   margin-top: 10px;
   text-align: center;
