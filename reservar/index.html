@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <!--na main principal está todo o conteudo do site-->
   <main class="principal">
     <div class="menu">
       <!--na div 'logo' está a logo do site dentro de um link, que ao clicar, direciona para a página de cadastro.-->
@@ -32,19 +33,22 @@
     </div>
     <!--Fim da div menu-->
     <main class="flex">
+      <!--o main serve para organizar bem cada parte-->
       <div class="lista">
         <nav>
-          <div class="opcoes"> <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->
+          <div class="opcoes">
+            <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->
             <ul>
+              <!--lista-->
               <li><a class="a-li" href="/comédia/index.html">Comédia</a></li>
               <!--direciona para a página comedia-->
               <li><a class="a-li" href="/romance/index.html">Romance</a></li>
               <!--direciona para a página romance-->
-              <li id="co"><a class="a-li" href="/ação/index.html">Ação</a></li>
+              <li><a class="a-li" href="/ação/index.html">Ação</a></li>
               <!--direciona para a página ação-->
               <li><a class="a-li" href="/suspense/index.html">Suspense</a></li>
               <!--direciona para a página suspense-->
-              <li><a class="a-li" href="/reservar/index.html">Reservar Livro</a></li>
+              <li id="co"><a class="a-li" href="/reservar/index.html">Reservar Livro</a></li>
               <!-- está só de ilustração, pois não criamos essa página-->
               <li><a class="a-li" href="/sobre/index.html">Sobre</a></li>
               <!--direciona para a página sobre-->
@@ -53,49 +57,37 @@
               <li><a class="a-li" href="#">Contato</a></li>
               <!-- está só de ilustração, pois não criamos essa página-->
             </ul>
-            <!--fim da ul-->
+            <!--fim da lista-->
           </div>
           <!--fim da div opcoes-->
           <hr size="1" />
+          <!-- tag de linha-->
+          <div class="btn">
+            <i class="fa-solid fa-circle-user i2" style="font-size: 40px"></i><!--icone de perfil-->
+            <a class="a-btn" href="#"><button>BEM-VINDO(A)</button></a>
+          </div>
+          <!--fim de btn-->
+          <div class="i2">
+            <!--icones das redes sociais-->
+            <i class="fa-brands fa-instagram i2"></i>
+            <i class="fa-brands fa-facebook i2"></i>
+            <i class="fa-brands fa-google i2"></i>
+            <i class="fa-brands fa-youtube i2"></i>
+            <i class="fa-brands fa-linkedin i2"></i>
+          </div>
+          <!--fim da div das redes-->
         </nav>
         <!--fim da nav-->
       </div>
       <!--fim da div lista-->
-
       <div class="corpo-do-site">
-        <div class="chat"><!--criamos uma tabela para ilustrar um chat(bate-papo)-->
-          <table style="width: 100%; text-align: center;">
-            <tr>
-              <td><!--titulo do chat-->
-                <h2 class="titulo">Chat - Central de ajuda</h2>
-                <hr size="1">
-              </td>
-            </tr>
-            <tr>
-              <th><!--coluna ilustrando uma mensagem enviada-->
-                <div class="minhas-msg" style="display: flex;">
-                  <i class="fa-solid fa-circle-user i2" style="font-size: 40px"></i>
-                  <h4 class="eu">Olá, tudo bem? <br> No que posso ajudar?</h4>
-                </div>
-              </th>
-            </tr>
-          </table><!--fim da tabela-->
-        </div> <!--fim da div chat-->
-
-        <div class="msg">
-          <form class="form-cadastro" action=""><!--form ilustrando um campo para enviar mensagem-->
-            <input type="text" id="no" placeholder="Envie sua mensagem:" required />
-            <input id="env" type="submit" value="Enviar" style="width: 80px;">
-        </div><!--fim da div msg-->
-
-        <div class="i2"><!--icones das redes sociais-->
-          <i class="fa-brands fa-instagram i2"></i>
-          <i class="fa-brands fa-facebook i2"></i>
-          <i class="fa-brands fa-google i2"></i>
-          <i class="fa-brands fa-youtube i2"></i>
-          <i class="fa-brands fa-linkedin i2"></i>
-        </div><!--fim da div i2-->
-      </div><!--fim da div corpo-do-site -->
+        <!--essa div serve para organizar as outras divs-->
+        <div class="biblioteca">
+       
+        </div>
+        <!--fim da biblioteca-->
+      </div>
+      <!--fim da div corpo-do-site-->
     </main>
     <!--fim da main flex-->
   </main>
