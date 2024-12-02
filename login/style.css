@@ -86,10 +86,7 @@ i:hover {
   margin-top: 10px; /* Define uma margem superior */
   text-align: center; /* Centraliza o conteúdo */
 }
-/*Estilo para listas com a classe 'lista'*/
-.lista {
-  width: 20%; /* Define a largura como 20% */
-}
+
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
   background: linear-gradient(to right, rgba(0, 140, 255, 0.13), #9340ff25); /* Aplica um gradiente de fundo */
@@ -116,20 +113,19 @@ i:hover {
 .cadastro {
   border: 1px solid; /* Define uma borda sólida */
   width: 50%; /* Define a largura como 50% */
-  margin: 0px; /* Remove a margem */
-  text-align: center; /* Centraliza o texto */
-  align-items: center; /* Centraliza verticalmente */
   border-radius: 20px; /* Arredonda as bordas */
-  padding-top: 60px; /* Adiciona preenchimento superior */
+  margin: 0 auto;
+  padding-top: 10%;
 }
 /*Estilo para a div com a classe 'form-cadastro'*/
 .form-cadastro {
   width: 80%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
+  margin: 0 auto;
 }
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
- #em, #se {
+ #user, #se {
   border: 1px solid #2b332f; /* Define a borda dos campos */
   margin-top: 2px; /* Adiciona uma margem superior */
   font-size: 15px; /* Define o tamanho da fonte */
