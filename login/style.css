@@ -89,7 +89,7 @@ i:hover {
 
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
-  background: linear-gradient(to right, rgba(0, 140, 255, 0.13), #9340ff25); /* Aplica um gradiente de fundo */
+  background-color: aliceblue;
   width: 80%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex; /* Usa layout flexível */
@@ -130,4 +130,8 @@ i:hover {
   margin-top: 2px; /* Adiciona uma margem superior */
   font-size: 15px; /* Define o tamanho da fonte */
   width: 300px; /* Define a largura dos campos */
+}
+#esenha{
+  color: #000000;
+  text-align: right;
 }
