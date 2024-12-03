@@ -11,16 +11,7 @@ body {
   background-color: aliceblue; /* Define a cor de fundo da página */
   height: 100%; /* Define a altura total do body */
   display: block; /* Garante que o body seja exibido como um bloco */
-  
-}
-
-/*Estilo para a seção do logo*/
-.logo {
-  padding: 0; /* Remove o preenchimento interno */
-  text-align: left; /* Alinha o conteúdo à esquerda */
-  width: 200px; /* Define a largura do logo */
-  height: 300px; /* Define a altura do logo */
-  background-color: #6055c700; /* Define uma cor de fundo transparente */
+  overflow: hidden;
 }
 
 /*Estilo para a imagem do logo*/

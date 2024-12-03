@@ -50,28 +50,19 @@ h3 {
 
 /* Estilo da logo */
 .logo {
-  padding: 0;
-  /* Sem preenchimento na logo */
-  text-align: left;
-  /* Alinha a logo à esquerda */
-  margin-left: 20px;
-  /* Margem à esquerda */
-  width: 200px;
-  /* Largura da logo */
-  height: 200px;
-  /* Altura da logo */
-  background-color: #6055c700;
-  /* Fundo transparente */
-  display: flex;
-  /* Usa flexbox para layout */
+  padding: 0; /* Sem preenchimento na logo */
+  text-align: left; /* Alinha a logo à esquerda */
+  margin-left: 20px; /* Margem à esquerda */
+  width: 200px; /* Largura da logo */
+  height: 200px; /* Altura da logo */
+  background-color: #6055c700; /* Fundo transparente */
+  display: flex;  /* Usa flexbox para layout */
 }
 
 /* Estilo de um elemento com classe 'log' */
 .log {
-  height: 200px;
-  /* Altura da imagem */
-  width: 200px;
-  /* Largura da imagem */
+  height: 200px; /* Altura da imagem */
+  width: 200px; /* Largura da imagem */
 }
 
 /* Lista não ordenada */
@@ -122,64 +113,43 @@ a:hover {
 
 /* Menu de navegação */
 .menu {
-  align-items: center;
-  /* Centraliza os itens verticalmente */
-  justify-content: center;
-  /* Centraliza os itens horizontalmente */
-  height: 80px;
-  /* Altura do menu */
-  display: flex;
-  /* Flexbox para organizar os itens */
-  background-color: black;
-  /* Fundo com gradiente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  height: 80px; /* Altura do menu */
+  display: flex; /* Flexbox para organizar os itens */
+  background-color: black;/* Fundo com gradiente */
 }
 
 /* Formulário de busca */
 .form {
-  display: flex;
-  /* Flexbox para centralização */
-  margin: 0 auto;
-  /* Centraliza horizontalmente */
-  justify-content: center;
-  /* Alinha ao centro */
+  display: flex; /* Flexbox para centralização */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  justify-content: center; /* Alinha ao centro */
 }
 
 /* Campos de entrada do formulário */
 form input {
-  width: 100%;
-  /* Largura total */
-  height: 50px;
-  /* Altura do campo */
-  background-color: #ffffff;
-  /* Fundo branco */
-  border: none;
-  /* Remove borda */
-  outline: none;
-  /* Remove contorno ao focar */
-  border-radius: 50px;
-  /* Bordas arredondadas */
-  color: rgb(0, 0, 0);
-  /* Cor do texto */
-  font-size: 25px;
-  /* Tamanho da fonte */
-  padding-left: 20px;
-  /* Espaçamento à esquerda dentro do campo */
+  width: 100%;/* Largura total */
+  height: 50px;/* Altura do campo */
+  background-color: #ffffff; /* Fundo branco */
+  border: none;  /* Remove borda */
+  outline: none; /* Remove contorno ao focar */
+  border-radius: 50px; /* Bordas arredondadas */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 25px;  /* Tamanho da fonte */
+  padding-left: 20px; /* Espaçamento à esquerda dentro do campo */
 }
 
 /* Animação ao passar o mouse sobre o campo de entrada */
 form input:hover {
-  transition: 0.1s;
-  /* Duração da transição */
-  transform: scale(1.05);
-  /* Amplia levemente o campo */
+  transition: 0.1s; /* Duração da transição */
+  transform: scale(1.05);/* Amplia levemente o campo */
 }
 
 /* Estilo de ícones ao passar o mouse */
 i:hover {
-  transition: 0.1s;
-  /* Duração da transição */
-  transform: scale(1.2);
-  /* Amplia o ícone */
+  transition: 0.1s;  /* Duração da transição */
+  transform: scale(1.2); /* Amplia o ícone */
 }
 
 /* Estilo do ícone 1 */

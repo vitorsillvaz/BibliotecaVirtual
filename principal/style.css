@@ -26,29 +26,69 @@ h3 {
   width: 24px;
 }
 .logo {
-  padding: 0;
-  text-align: left;
-  margin-left: 20px;
-  width: 200px;
-  height: 200px;
-  background-color: #6055c700;
-  display: flex;
+  padding: 0; /* Sem preenchimento na logo */
+  text-align: left; /* Alinha a logo à esquerda */
+  margin-left: 20px; /* Margem à esquerda */
+  width: 200px; /* Largura da logo */
+  height: 200px; /* Altura da logo */
+  background-color: #6055c700; /* Fundo transparente */
+  display: flex;  /* Usa flexbox para layout */
 }
+/* Estilo de um elemento com classe 'log' */
 .log {
-  height: 200px;
-  width: 200px;
+  height: 220px; /* Altura da imagem */
+  width: 220px; /* Largura da imagem */
+}
+
+.menu {
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  height: 80px; /* Altura do menu */
+  display: flex; /* Flexbox para organizar os itens */
+  background-color: black;/* Fundo com gradiente */
+}
+.form {
+  display: flex;  /* Flexbox para centralização */
+  margin: 0 auto;/* Centraliza horizontalmente */
+  justify-content:center;  /* Alinha ao centro */
+}
+
+form input {
+  width: 200%;/* Largura total */
+  height: 50px;/* Altura do campo */
+  background-color: #ffffff; /* Fundo branco */
+  border: none;  /* Remove borda */
+  outline: none; /* Remove contorno ao focar */
+  border-radius: 50px; /* Bordas arredondadas */
+  color: rgb(0, 0, 0); /* Cor do texto */
+  font-size: 25px;  /* Tamanho da fonte */
+  padding-left: 20px; /* Espaçamento à esquerda dentro do campo */
+}
+.i1 {
+  color: #ffffff;
+  padding-top: 8px;
+  padding-left: 3px;
+  font-size: 20px;
+}
+.opcoes{
+  background-color: #c0c0c0;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
 }
 ul {
-  margin-top: 20px;
+  display: inline-block;
+  padding: 0px;
 }
 li {
-  display: flex;
+  padding: 15px;
+  display: inline-block;
   align-items: center; /* Centraliza o conteúdo verticalmente */
-  height: 50px; /* Ajuste a altura como necessário */
 }
 li:hover {
-  background-color: aliceblue;
-  border-radius: 50px;
+  background-color: rgb(207, 221, 233);
+  border-radius: 0px;
 }
 a {
   text-decoration: none;
@@ -60,55 +100,6 @@ a {
 }
 a:hover {
   color: #270158;
-}
-.menu {
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  display: flex;
-  background: linear-gradient(to right, #000000, #000000);
-}
-.form {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  justify-items: center;
-}
-form input {
-  width: 100%;
-  height: 50px;
-  background-color: #ffffff;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
-  padding-left: 20px;
-}
-form input:hover {
-  transition: 0.1s;
-  transform: scale(1.05);
-}
-i:hover {
-  transition: 0.1s;
-  transform: scale(1.2);
-}
-.i1 {
-  color: #ffffff;
-  padding-top: 7px;
-  padding-left: 3px;
-  font-size: 30px;
-}
-nav {
-  text-align: left;
-  margin: 0 auto;
-  font-size: 20px;
-  background-color: rgb(201, 211, 219);
-  height: 100vh;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  padding: 10px;
 }
 .btn button {
   margin-top: 20px;
@@ -141,29 +132,27 @@ button:hover {
   transform: scale(1.05);
   transition: 0.01s;
 }
-.lista {
-  width: 20%;
-}
 .livro {
   padding: 2px;
   margin: 0 auto; /* Centraliza a tabela */
   border-collapse: collapse; /* Junta as bordas das células */
 }
 .biblioteca {
-  background-color: rgb(201, 211, 219);
+  background-color: rgba(201, 211, 219, 0);
   width: 90%; /* Define a largura da div */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 10px;
   border-radius: 10px;
+  padding: 10px;
+  gap: 10px; /* Espaçamento entre as divs */
 }
 .livro {
-  width: 250px;
+  width: 20%;
   margin: 0px;
-  border: 1px solid rgba(128, 128, 128, 0.459);
   border-radius: 10px ;
+  padding: 20px;
 }
 .img {
   height: 270px;

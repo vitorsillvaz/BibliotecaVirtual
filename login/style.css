@@ -14,14 +14,6 @@ body {
   overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o tamanho da tela */
 }
 
-/*Estilo para a seção do logo*/
-.logo {
-  text-align: left; /* Alinha o conteúdo à esquerda */
-  width: 200px; /* Define a largura do logo */
-  height: 300px; /* Define a altura do logo */
-  background-color: #6055c700; /* Define uma cor de fundo transparente */
-}
-
 /*Estilo para a imagem do logo*/
 .log {
   margin-top: 10px;
@@ -53,6 +45,7 @@ form input {
   color: rgb(0, 0, 0); /* Define a cor do texto */
   font-size: 25px; /* Define o tamanho da fonte */
   padding-left: 20px; /* Adiciona preenchimento à esquerda */
+  margin-top: 100px;
   margin: 0 auto; /* Centraliza horizontalmente */
 }
 /*Efeito ao passar o mouse sobre ícones*/
@@ -82,7 +75,7 @@ i:hover {
 /*Estilo para ícones com a classe 'i2'*/
 .i2 {
   color: #000000; /* Define a cor dos ícones */
-  font-size: 20px; /* Define o tamanho da fonte (ícones) */
+  font-size: 50px; /* Define o tamanho da fonte (ícones) */
   margin-top: 10px; /* Define uma margem superior */
   text-align: center; /* Centraliza o conteúdo */
 }
@@ -98,24 +91,23 @@ i:hover {
   padding: 100px; /* Adiciona preenchimento interno */
   border-radius: 50px; /* Arredonda as bordas */
 }
-/*Estilo para a imagem da coruja*/
-.coruja {
-  height: 500px; /* Define a altura da imagem */
-  width: 100%; /* Define a largura da imagem */
-  border-radius: 10px; /* Arredonda as bordas */
-}
+
 /*Estilo para a div com a classe 'corpo-do-site'*/
 .corpo-do-site {
   margin: 0 auto; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
 }
+
 /*Estilo para a div com a classe 'cadastro'*/
 .cadastro {
   border: 1px solid; /* Define uma borda sólida */
-  width: 50%; /* Define a largura como 50% */
+  width: 500px; /* Define a largura como 50% */
+  height: 500px;
   border-radius: 20px; /* Arredonda as bordas */
   margin: 0 auto;
-  padding-top: 10%;
+  align-items: center;
+  justify-content: center;
+  background-color:aliceblue;
 }
 /*Estilo para a div com a classe 'form-cadastro'*/
 .form-cadastro {
@@ -123,6 +115,7 @@ i:hover {
   margin: 0 auto; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
   margin: 0 auto;
+  margin-top: 30px;
 }
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
  #user, #se {
