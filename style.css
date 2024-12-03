@@ -62,7 +62,7 @@ i:hover {
   margin-top: 20px; /* Define a margem superior */
   padding: 10px 0px; /* Adiciona preenchimento interno vertical */
   font-size: 15px; /* Define o tamanho da fonte */
-  background: linear-gradient(to right, #000000, #000000); /* Aplica um gradiente de fundo */
+  background-color: #000000;
   border: none; /* Remove a borda */
   border-radius: 30px; /* Arredonda as bordas do botão */
   cursor: pointer; /* Altera o cursor ao passar sobre o botão */
@@ -93,7 +93,7 @@ i:hover {
 
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
-  background: linear-gradient(to right, rgba(0, 140, 255, 0.13), #9340ff25); /* Aplica um gradiente de fundo */
+  background-color: aliceblue;
   width: 80%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex; /* Usa layout flexível */
