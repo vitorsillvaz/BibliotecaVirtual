@@ -1,359 +1,200 @@
 /* Reset geral para remover margens e preenchimentos */
 * {
-  margin: 0;
-  /* Remove a margem */
-  padding: 0;
-  /* Remove o preenchimento */
-  box-sizing: border-box;
-  /* Inclui as bordas e o preenchimento nas dimensões totais dos elementos */
-  font-family: "Poppins", sans-serif;
-  /* Define a fonte padrão do site */
+  margin: 0; /* Remove a margem */
+  padding: 0;  /* Remove o preenchimento */
+  box-sizing: border-box;/* Inclui as bordas e o preenchimento nas dimensões totais dos elementos */
+  font-family: "Poppins", sans-serif;  /* Define a fonte padrão do site */
 }
 
 /* Estilo do corpo da página */
 body {
-  background-color: aliceblue;
-  /* Cor de fundo */
-  height: 100%;
-  /* Define a altura do corpo como 100% da janela */
-  display: block;
-  /* Exibe o corpo como bloco */
-  overflow: hidden;
-  /* Esconde o transbordo de conteúdo fora da área visível */
+  background-color: rgb(255, 255, 255);  /* Cor de fundo */
+  height: 100%;  /* Define a altura do corpo como 100% da janela */
+  display: block;  /* Exibe o corpo como bloco */
 }
 
 /* Estilo do título principal */
 h1 {
-  color: white;
-  /* Cor do texto */
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  /* Fonte estilizada para o título */
+  color: white;  /* Cor do texto */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Fonte estilizada para o título */
 }
 
 /* Estilo de subtítulo */
 h3 {
-  font-size: 20px;
-  /* Tamanho da fonte */
-  margin-left: 0px;
-  /* Sem margem à esquerda */
-  color: white;
-  /* Cor do texto */
-  padding: 0px;
-  /* Sem preenchimento */
-}
-
-/* Ícone de livros */
-.icone_livros {
-  width: 24px;
-  /* Define a largura dos ícones */
-}
-
-/* Estilo da logo */
-.logo {
-  padding: 0; /* Sem preenchimento na logo */
-  text-align: left; /* Alinha a logo à esquerda */
-  margin-left: 20px; /* Margem à esquerda */
-  width: 200px; /* Largura da logo */
-  height: 200px; /* Altura da logo */
-  background-color: #6055c700; /* Fundo transparente */
-  display: flex;  /* Usa flexbox para layout */
-}
-
-/* Estilo de um elemento com classe 'log' */
-.log {
-  height: 200px; /* Altura da imagem */
-  width: 200px; /* Largura da imagem */
+  font-size: 20px;  /* Tamanho da fonte */
+  margin-left: 0px;  /* Sem margem à esquerda */
+  color: white;  /* Cor do texto */
+  padding: 0px;  /* Sem preenchimento */
 }
 
 /* Lista não ordenada */
 ul {
-  margin-top: 20px;
-  /* Espaçamento no topo da lista */
+  gap: 25px;
+  display: grid;
 }
-
-/* Itens da lista */
-li {
-  display: flex;
-  /* Flexbox para organizar o conteúdo */
-  align-items: center;
-  /* Centraliza o conteúdo verticalmente */
-  height: 50px;
-  /* Altura de cada item */
-}
-
-/* Estilo ao passar o mouse sobre o item da lista */
-li:hover {
-  background-color: aliceblue;
-  /* Muda a cor de fundo ao passar o mouse */
-  border-radius: 50px;
-  /* Bordas arredondadas */
-}
-
-/* Links */
-a {
-  text-decoration: none;
-  /* Remove sublinhado dos links */
-  color: rgb(0, 0, 0);
-  /* Cor preta para o link */
-  display: block;
-  /* Exibe o link como bloco */
-}
-
-/* Margem esquerda para links dentro de listas */
-.a-li {
-  margin-left: 5px;
-  /* Adiciona espaço à esquerda */
-}
-
-/* Estilo ao passar o mouse sobre links */
-a:hover {
-  color: #270158;
-  /* Muda a cor do texto ao passar o mouse */
-}
-
 /* Menu de navegação */
 .menu {
   align-items: center; /* Centraliza os itens verticalmente */
   justify-content: center; /* Centraliza os itens horizontalmente */
   height: 80px; /* Altura do menu */
   display: flex; /* Flexbox para organizar os itens */
-  background-color: black;/* Fundo com gradiente */
+  background-color: black;/* Fundo*/
 }
-
-/* Formulário de busca */
-.form {
-  display: flex; /* Flexbox para centralização */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  justify-content: center; /* Alinha ao centro */
-}
-
 /* Campos de entrada do formulário */
 form input {
   width: 100%;/* Largura total */
-  height: 50px;/* Altura do campo */
+  height: 200%;/* Altura do campo */
   background-color: #ffffff; /* Fundo branco */
   border: none;  /* Remove borda */
-  outline: none; /* Remove contorno ao focar */
   border-radius: 50px; /* Bordas arredondadas */
   color: rgb(0, 0, 0); /* Cor do texto */
   font-size: 25px;  /* Tamanho da fonte */
   padding-left: 20px; /* Espaçamento à esquerda dentro do campo */
 }
-
-/* Animação ao passar o mouse sobre o campo de entrada */
-form input:hover {
-  transition: 0.1s; /* Duração da transição */
-  transform: scale(1.05);/* Amplia levemente o campo */
+.log{
+  width: 220px;
+  height: 220px;
+}
+/* Itens da lista */
+li {
+  display: flex;  /* Flexbox para organizar o conteúdo */
+  align-items: center;  /* Centraliza o conteúdo verticalmente */
+  height: 50px;  /* Altura de cada item */
 }
 
-/* Estilo de ícones ao passar o mouse */
-i:hover {
-  transition: 0.1s;  /* Duração da transição */
-  transform: scale(1.2); /* Amplia o ícone */
+/* Estilo ao passar o mouse sobre o item da lista */
+li:hover {
+  background-color: rgb(228, 228, 228);  /* Muda a cor de fundo ao passar o mouse */
+  border-radius: 50px;  /* Bordas arredondadas */
 }
 
-/* Estilo do ícone 1 */
-.i1 {
-  color: #ffffff;
-  /* Cor do ícone */
-  padding-top: 7px;
-  /* Espaçamento superior */
-  padding-left: 3px;
-  /* Espaçamento à esquerda */
-  font-size: 30px;
-  /* Tamanho da fonte do ícone */
+/* Links */
+a {
+  text-decoration: none;  /* Remove sublinhado dos links */
+  color: rgb(0, 0, 0);  /* Cor preta para o link */
+  display: block;  /* Exibe o link como bloco */
 }
+
+/* Margem esquerda para links dentro de listas */
+.a-li {
+  margin-left: 5px;  /* Adiciona espaço à esquerda */
+}
+
+/* Estilo ao passar o mouse sobre links */
+a:hover {
+  color: #000000;  /* Muda a cor do texto ao passar o mouse */
+}
+
+
 
 nav {
-  text-align: left;
-  /* Alinha o conteúdo à esquerda */
-  margin: 0 auto;
-  /* Centraliza horizontalmente */
-  font-size: 20px;
-  /* Tamanho da fonte */
-  background-color: rgb(201, 211, 219);
-  /* Cor de fundo */
-  height: 100vh;
-  /* Altura total da tela */
-  justify-content: center;
-  /* Centraliza o conteúdo */
-  padding: 10px;
-  /* Preenchimento */
-}
-
-/* Botão */
-.btn button {
-  margin-top: 20px;
-  /* Margem superior */
-  padding: 10px 0px;
-  /* Preenchimento vertical */
-  font-size: 15px;
-  /* Tamanho da fonte */
-  background: linear-gradient(to right, #000000, #000000);
-  /* Fundo com gradiente */
-  border: none;
-  /* Remove borda */
-  border-radius: 30px;
-  /* Bordas arredondadas */
-  cursor: pointer;
-  /* Altera o cursor para pointer */
-  transition: 0.3s;
-  /* Duração da transição */
-  width: 80%;
-  /* Largura do botão */
-  height: 80%;
-  /* Altura do botão */
-  color: white;
-  /* Cor do texto */
-}
-
-/* Centraliza o botão */
-.btn {
-  text-align: center;
-  /* Alinha o conteúdo ao centro */
-  margin: 0 auto;
-  /* Centraliza horizontalmente */
-}
-
-/* Estilo de outro link */
-.a-btn {
-  text-align: center;
-  /* Centraliza o texto */
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  font-size: 20px;  /* Tamanho da fonte */
+  background-color:rgb(237, 238, 240); /* Cor de fundo */
+  height: 100%;  /* Altura total da tela */
+  justify-content: center;  /* Centraliza o conteúdo */
+  padding: 10px;  /* Preenchimento */
+  border: 1px solid rgb(177, 175, 175);
 }
 
 /* Estilo do ícone 2 */
 .i2 {
-  color: #000000;
-  /* Cor do ícone */
-  font-size: 20px;
-  /* Tamanho da fonte */
-  margin-top: 10px;
-  /* Margem superior */
-  text-align: center;
-  /* Centraliza o texto */
+  color: #000000;  /* Cor do ícone */
+  font-size: 40px;  /* Tamanho da fonte */
+  margin-top: 10px; /* Margem superior */
+  text-align: center;  /* Centraliza o texto */
 }
-
-/* Animação ao passar o mouse sobre botões */
-button:hover {
-  box-shadow: 0px 0px 3px #28262bce;
-  /* Sombra ao passar o mouse */
+i:hover{
+  transition: 0.1s;
   transform: scale(1.05);
-  /* Amplia levemente o botão */
-  transition: 0.01s;
-  /* Duração da transição */
 }
-
 /* Lista de livros */
 .lista {
-  width: 20%;
-  /* Largura da lista */
-}
-
-/* Estilo de um livro */
-.livro {
-  padding: 2px;
-  /* Preenchimento interno */
-  margin: 0 auto;
-  /* Centraliza a tabela */
-  border-collapse: collapse;
-  /* Junta as bordas das células */
+  width: 25%;  /* Largura da lista */
 }
 
 /* Biblioteca */
 .biblioteca {
-  background-color: rgb(201, 211, 219);
-  /* Cor de fundo */
-  width: 90%;
-  /* Largura da div */
-  margin: 0 auto;
-  /* Centraliza horizontalmente */
-  display: flex;
-  /* Usa flexbox */
-  text-align: center;
-  /* Alinha o texto ao centro */
-  justify-content: center;
-  /* Centraliza o conteúdo */
-  margin-top: 10px;
-  /* Margem superior */
-  border-radius: 10px;
-  /* Bordas arredondadas */
+  background-color: rgb(255, 255, 255);  /* Cor de fundo */
+  width: 100%;  /* Largura da div */
+  margin: 0 auto;  /* Centraliza horizontalmente */
+  justify-content: center;  /* Centraliza o conteúdo */
+  padding: 20px;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  display: grid;
 }
-
+#btn-comprar{
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 5px;
+}
+#btn-comprar a{
+  color: #ffffff;
+  font-size: 20px;
+}
+#btn-comprar:hover{
+  transition: 0.1s;
+  transform: scale(1.05);
+}
 /* Estilo de cada livro */
 .livro {
-  width: 250px;
-  /* Largura do livro */
-  margin: 0px;
-  /* Sem margens */
-  border: 1px solid rgba(128, 128, 128, 0.459);
-  /* Borda*/
-  border-radius: 10px;
-  /* Bordas arredondadas */
+  background-color: rgb(237, 238, 240);
+  padding:15px;  /* Preenchimento interno */
+  margin: 0 auto;  /* Centraliza a tabela */
+  width: 250px;  /* Largura do livro */
+  margin: 10px;  /* Sem margens */
+  border: 1px solid rgba(128, 128, 128, 0.356);/* Borda*/
+  border-radius: 10px;  /* Bordas arredondadas */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.151), rgba(255, 255, 255, 0.096));
 }
 
 /* Imagem dentro do livro */
 .img {
-  height: 270px;
-  /* Altura da imagem */
-  width: 100%;
-  /* Largura total */
-  border-radius: 10px;
-  /* Bordas arredondadas */
+  height: 200px;  /* Altura da imagem */
+  width: 100%;  /* Largura total */
+  border-radius: 0px;  /* Bordas arredondadas */
 }
 
 /* Animação ao passar o mouse sobre a imagem */
 .img:hover {
-  transition: 0.1s;
-  /* Duração da transição */
-  transform: scale(1.05);
-  /* Amplia levemente a imagem */
-  box-shadow: 0px 0px 13px 0px rgba(21, 5, 80, 0.342);
-  /* Adiciona sombra */
+  transition: 0.1s;  /* Duração da transição */
+  transform: scale(1.05);  /* Amplia levemente a imagem */
+  box-shadow: 0px 0px 13px 0px rgba(21, 5, 80, 0.342);/* Adiciona sombra */
 }
 
 /* Parágrafo */
 p {
-  color: #000000;
-  /* Cor do texto */
-  font-family: Arial, Helvetica, sans-serif;
-  /* Fonte */
-  text-align: left;
-  /* Alinha o texto à esquerda */
-  font-size: 20px;
-  /* Tamanho da fonte */
-  cursor: pointer;
-  /* Altera o cursor ao passar o mouse */
-  padding: 5px;
-  /* Preenchimento interno */
+  color: #000000;  /* Cor do texto */
+  font-family: Arial, Helvetica, sans-serif;  /* Fonte */
+  text-align: left;  /* Alinha o texto à esquerda */
+  font-size: 20px; /* Tamanho da fonte */
+  cursor: pointer;  /* Altera o cursor ao passar o mouse */
+  padding: 5px;  /* Preenchimento interno */
 }
 
 /* Flexbox para estrutura */
 .flex {
-  display: flex;
-  /* Usa flexbox */
-  height: 100%;
-  /* Altura total */
-}
-
-/* Estilo do corpo do site */
-.corpo-do-site {
-  margin: 0 auto;
-  /* Centraliza horizontalmente */
-  align-items: center;
-  /* Centraliza os itens */
-  display: inline;
-  /* Exibe como inline */
+  display: flex;  /* Usa flexbox */
+  height: 100%;  /* Altura total */
 }
 
 /* Estilo para o link */
 #co>a {
-  color: aliceblue;
-  /* Cor do link */
+  color: aliceblue;  /* Cor do link */
 }
 
 #co {
-  border-radius: 50px;
-  /* Bordas arredondadas */
+  border-radius: 50px; /* Bordas arredondadas */
+  background-color: #000000;  /* Cor de fundo */
+}
+footer{
   background-color: #000000;
-  /* Cor de fundo */
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }

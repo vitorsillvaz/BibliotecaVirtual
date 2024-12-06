@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   display: block;
 }
@@ -71,7 +71,7 @@ form input {
   font-size: 20px;
 }
 .opcoes{
-  background-color: #c0c0c0;
+  background-color: #c0c0c000;
   color: #ffffff;
   text-align: center;
   padding: 0px;
