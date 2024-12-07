@@ -13,35 +13,29 @@
   <body>
      <main class="principal"> <!-- A tag <main> contém o conteúdo principal da página -->
      
-      <div class="menu"> <!-- A tag <div> define uma seção genérica, aqui usada para o menu -->            
-          <img class="log" src="/Sem título (1).png" /> <!-- Exibe uma imagem como logo -->
+      <div class="menu"><!-- A tag <div> define uma seção genérica, aqui usada para o menu -->
+        <div class="logo">
+          <a href="/index.html"><img class="log" src="/Sem título (1).png"  width="350px" height="80px"/></a>
+        </div> <!--fim da div logo-->
       </div><!-- fim da div menu -->
       
-      <div class="corpo-do-site"><!-- Seção que contém o conteúdo principal do site -->
-      
-        <div class="biblioteca"><!-- Seção biblioteca -->
+      <div class="biblioteca"><!-- Seção biblioteca -->
+        <div class="cadastro"> <!-- Seção de cadastro de usuário -->
 
-          <div class="cadastro"> <!-- Seção de cadastro de usuário -->
-           
             <div class="form-cadastro"><!-- Seção do formulário de cadastro -->
               <i class="fa-solid fa-circle-user i2" style="font-size: 60px"></i><!-- Ícone de perfil, importado da biblioteca Font Awesome -->
-             <h2 class="titulo">LOGIN</h2><!-- Título da seção de cadastro -->
-              <form class="form-cadastro"> <!-- Início do formulário -->
-          
-                <input type="text" id="user" placeholder="User" required /><!-- Campo de texto para o nome de usuário, obrigatório -->
-                <input type="password" id="se" placeholder="Senha:" required/><!-- Campo para o usuário cadastrar uma senha -->
-                <br><a href="#" id="esenha">esqueci senha</a>
-                <div class="btn-enviar"> <!-- Seção para o botão de envio do formulário -->
-                  <div class="btn"><!-- Botão -->
-                    <button type="submit">
-                      <a href="/principal/index.html">ENTRAR</a>
-                    </button> <!-- Botão que, ao ser clicado, redireciona para a página principal -->
-                  </div><!--fim da div btn-->
-                </div><!-- fim da div btn-enviar -->
-                
-              </form><!-- fim do form-->
+              <h2 class="titulo">LOGIN</h2><!-- Título da seção de cadastro -->
+
+          <form>
+            <input type="text" name="user" id="user" placeholder="user">
+            <input type="password" name="senha" id="se" placeholder="senha"><br>
+             
+            <button type="submit"><a href="/principal/index.html" style="color: white;">Entrar</a></button><br>
+          </form>
             </div><!--fim da div form-cadastro-->
-        
+            
+        <hr size="1">
+
             <div class="i2"> <!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->
               <i class="fa-brands fa-instagram i2"></i>
               <i class="fa-brands fa-facebook i2"></i>
@@ -49,9 +43,10 @@
             </div><!-- fim da div i2 -->
 
           </div><!-- fim da div cadastro -->
-
         </div><!-- fim da div biblioteca -->
-      </div><!-- fim da div corpo-do-site -->
     </main><!-- fim da tag main -->
+
+    <footer>SYSTEM.BOOK</footer>
+
   </body>
 </html>

@@ -7,7 +7,7 @@
 }
 /* Estilo do corpo da página */
 body {
-  background-color: rgb(255, 255, 255);  /* Cor de fundo */
+  background-color: #ffffff; /* Cor de fundo */
   height: 100%;  /* Define a altura do corpo como 100% da janela */
   display: block;  /* Exibe o corpo como bloco */
 }
@@ -80,7 +80,7 @@ a {
 }
 /* Biblioteca */
 .biblioteca {
-  background-color: rgb(255, 255, 255);  /* Cor de fundo */
+  background-image: linear-gradient(to right, #c0c0c028,rgb(255, 255, 255), rgb(255, 255, 255) , #c0c0c028);  /* Cor de fundo */
   width: 100%;  /* Largura da div */
   margin: 0 auto;  /* Centraliza horizontalmente */
   justify-content: center;  /* Centraliza o conteúdo */

@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   height: 100%;
   display: block;
 }
@@ -77,7 +77,7 @@ a {
   display: block;
 }
 .biblioteca {
-  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, #c0c0c028,rgb(255, 255, 255), rgb(255, 255, 255) , #c0c0c028);  /* Cor de fundo */
   width: 100%; /* Define a largura da div */
   margin: 0 auto; /* Centraliza horizontalmente */
   justify-content: center;

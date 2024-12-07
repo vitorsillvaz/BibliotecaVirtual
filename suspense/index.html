@@ -14,28 +14,22 @@
 <body>
   <!--na main principal está todo o conteudo do site-->
   <main class="principal">
-    <div class="menu">
-      <!--na div 'logo' está a logo do site dentro de um link, que ao clicar, direciona para a página de cadastro.-->
+    <div class="menu"><!--na div 'logo' está a logo do site dentro de um link, que ao clicar, direciona para a página de cadastro.-->
       <div class="logo">
-        <a href="/index.html"><img class="log" src="/Sem título (1).png" /></a>
-      </div>
-      <!--fim da div logo-->
-      <!--dentro da div 'form', adicionamos um form junto de um input(do tipo 'text') para ilustrar um campo de pesquisa-->
-      <div class="form">
+        <a href="/index.html"><img class="log" src="/Sem título (1).png"  width="250px" height="50px"/></a>
+      </div> <!--fim da div logo-->
+    
+      <div class="form"><!--dentro da div 'form', adicionamos um form junto de um input(do tipo 'text') para ilustrar um campo de pesquisa-->
         <form>
-          <input type="text" placeholder="Digite sua pesquisa" />
-          <!--o comando 'placeholder' serve para colocar uma mensagem dentro do input-->
+          <input type="text" placeholder="Digite sua pesquisa:" /><!--o comando 'placeholder' serve para colocar uma mensagem dentro do input-->        
         </form>
-        <i class="fas fa-search i1"></i>
-        <!--icone de lupa-->
-      </div>
-      <!--fim da div form-->
-    </div>
-    <!--Fim da div menu-->
-    <main class="flex">
-      <!--o main serve para organizar bem cada parte-->
-      <div class="lista">
-        <nav>
+      </div><!--fim da div form-->
+
+      <div class="icone">
+        <img width="48" height="50" src="https://img.icons8.com/material-sharp/48/FFFFFF/shopping-cart.png" alt="shopping-cart"/>
+      </div><!--fim da div icone-->
+    </div><!--Fim da div menu--> 
+  
           <div class="opcoes">
             <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->
             <ul>
@@ -48,7 +42,7 @@
               <!--direciona para a página ação-->
               <li id="co"><a class="a-li" href="/suspense/index.html">Suspense</a></li>
               <!--direciona para a página suspense-->
-              <li><a class="a-li" href="/sobre/index.html">Sobre</a></li>
+              <li><a class="a-li" href="#">Sobre</a></li>
               <!--direciona para a página sobre-->
               <li><a class="a-li" href="/central de ajuda/index-ajuda.html">Ajuda</a></li>
               <!--direciona para a página de Ajuda-->
@@ -59,122 +53,93 @@
           </div>
           <!--fim da div opcoes-->
           <hr size="1" />
-          <!-- tag de linha-->
-          <div class="btn">
-            <i class="fa-solid fa-circle-user i2" style="font-size: 40px"></i><!--icone de perfil-->
-            <a class="a-btn" href="#"><button>BEM-VINDO(A)</button></a>
-          </div>
-          <!--fim de btn-->
-          <div class="i2">
+         
+        <div class="biblioteca">
+          <!--nessa div vai ficar os 'livros'-->
+          <div class="livro"><!--essa div fica a indicação de livro-->
+            <img class="img"
+                src="https://m.media-amazon.com/images/I/81H8xIUVwHL._SL1500_.jpg" width="250px" />
+            <p> A contadora</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 39,80</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/7cDz32T">Comprar</a></button>
+          </div><!--fim da div livro-->
+          
+          <div class="livro"><!--essa div fica a indicação de livro-->
+           <img class="img"
+                src="https://m.media-amazon.com/images/I/71+Z31rpy2L._SL1500_.jpg" width="250px" />
+            <p>A ilha</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 29,10</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/eWkoDMW">Comprar</a></button>
+          </div><!--fim da div livro-->
+          
+          <div class="livro"><!--essa div fica a indicação de livro-->
+           <img class="img"
+                src="https://m.media-amazon.com/images/I/71LBtlVGqHL._SL1500_.jpg" width="250px" />
+            <p>A cirurgiã</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 23,30</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/9guB674">Comprar</a></button>
+          </div> <!--fim da div livro-->
+         
+          <div class="livro"><!--essa div fica a indicação de livro-->
+            <img class="img"
+                src="https://m.media-amazon.com/images/I/61qZFxrXZJL._SL1000_.jpg" width="250px" />
+            <p style="cursor: pointer;">A casa do medo</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 17,00</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/1NegFHk">Comprar</a></button>
+          </div> <!--fim da div livro-->
+          
+          <div class="livro"><!--essa div fica a indicação de livro-->
+           <img class="img"
+                src="https://m.media-amazon.com/images/I/41xDq3pat9L._SY445_SX342_.jpg" width="250px" />
+            <p>Jantar secreto</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 35,90</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/e0ZJbTg">Comprar</a></button>
+          </div> <!--fim da div livro-->
+         
+          <div class="livro"><!--essa div fica a indicação de livro-->
+            <img class="img"
+                src="https://m.media-amazon.com/images/I/71O0lvaszkL._SL1500_.jpg" width="250px" />
+            <p>A outra</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 25,42</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/ixXPLDx">Comprar</a></button>
+          </div><!--fim da div livro-->
+          
+          <div class="livro"><!--essa div fica a indicação de livro-->
+            <img class="img"
+                src="https://m.media-amazon.com/images/I/81liLAVOW6L._SL1500_.jpg" width="250px" />
+            <p>A fúria </p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 36,27</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/iOulCU2">Comprar</a></button>
+          </div><!--fim da div livro-->
+          
+          <div class="livro"><!--essa div fica a indicação de livro-->
+           <img class="img"
+                src="https://m.media-amazon.com/images/I/71zjlOS6ILL._SL1280_.jpg" width="250px" />
+            <p>Não Confie em Ninguém</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 52,84</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/eny1PUk">Comprar</a></button>
+          </div><!--fim da div livro-->
+          
+          <div class="livro"><!--essa div fica a indicação de livro-->
+            <img class="img"
+                src="https://m.media-amazon.com/images/I/81O9QrXa4mL._SL1500_.jpg" width="250px" />
+            <p>Lapso</p><!--descrição do livro-->
+            <h4 style="color: brown;">R$ 55,81</h4>
+            <button type="button" id="btn-comprar"><a href="https://a.co/d/idnc4sx">Comprar</a></button>
+          </div><!--fim da div livro-->
+          
+        </div> <!--fim da biblioteca-->
+  </main>  <!--fim main principal-->
+
+  <footer>
+    SYSTEM.BOOK
+    <div class="i2">
             <!--icones das redes sociais-->
             <i class="fa-brands fa-instagram i2"></i>
             <i class="fa-brands fa-facebook i2"></i>
             <i class="fa-brands fa-google i2"></i>
-            <i class="fa-brands fa-youtube i2"></i>
-            <i class="fa-brands fa-linkedin i2"></i>
-          </div>
-          <!--fim da div das redes-->
-        </nav>
-        <!--fim da nav-->
-      </div>
-      <!--fim da div lista-->
-      <div class="corpo-do-site">
-        <!--essa div serve para organizar as outras divs-->
-        <div class="biblioteca">
-          <!--nessa div vai ficar os 'livros'-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/7cDz32T"><img class="img"
-                src="https://m.media-amazon.com/images/I/81H8xIUVwHL._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>
-              A contadora</p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/eWkoDMW"><img class="img"
-                src="https://m.media-amazon.com/images/I/71+Z31rpy2L._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>A ilha</p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/9guB674"><img class="img"
-                src="https://m.media-amazon.com/images/I/71LBtlVGqHL._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>
-              A cirurgiã
-            </p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/1NegFHk"><img class="img"
-                src="https://m.media-amazon.com/images/I/61qZFxrXZJL._SL1000_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p style="cursor: pointer;">
-              A casa do medo
-            </p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/14G7WTS"><img class="img"
-                src="https://m.media-amazon.com/images/I/81wkQljSoiL._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>Depois daquele verão</p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-        </div>
-        <!--fim da biblioteca-->
-        <div class="biblioteca">
-          <!--nessa div vai ficar os 'livros'-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/e0ZJbTg"><img class="img"
-                src="https://m.media-amazon.com/images/I/41xDq3pat9L._SY445_SX342_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>Jantar secreto</p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/ixXPLDx"><img class="img"
-                src="https://m.media-amazon.com/images/I/71O0lvaszkL._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>
-              A outra
-            </p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/iOulCU2"><img class="img"
-                src="https://m.media-amazon.com/images/I/81liLAVOW6L._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>
-              A fúria
-            </p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/eny1PUk"><img class="img"
-                src="https://m.media-amazon.com/images/I/71zjlOS6ILL._SL1280_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>
-              Não Confie em Ninguém
-            </p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <a href="https://a.co/d/idnc4sx"><img class="img"
-                src="https://m.media-amazon.com/images/I/81O9QrXa4mL._SL1500_.jpg" width="250px" /></a>
-            <!--imagem do livro dentro de um link que direciona para o site de compras-->
-            <p>Lapso</p><!--descrição do livro-->
-          </div>
-          <!--fim da div livro-->
-        </div>
-        <!--fim da biblioteca-->
-      </div>
-      <!--fim da div corpo-do-site-->
-    </main>
-    <!--fim da main flex-->
-  </main>
-  <!--fim main principal-->
-</body>
+    </div><!--fim da div das redes-->
+   </footer>
 
+</body>
 </html>

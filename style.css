@@ -8,26 +8,29 @@
 
 /*Estilo para o body da página*/
 body {
-  background-color: rgb(255, 255, 255); /* Define a cor de fundo da página */
   height: 100%; /* Define a altura total do body */
   display: block; /* Garante que o body seja exibido como um bloco */
   background-image: linear-gradient(to right, #c0c0c079,rgb(255, 255, 255), rgb(255, 255, 255) , rgba(255, 255, 255, 0.521));
 }
+
 .menu {
   background-color: rgb(0, 0, 0);/* Fundo com gradiente */
   height: 100px; /* Altura do menu */
   text-align: center;
   padding: 10px 0;
 }
+
 .logo{
   margin: 0 auto;
 }
+
 /*Estilo para links (a)*/
 a {
   text-decoration: none; /* Remove sublinhado dos links */
   color: rgb(255, 255, 255); /* Define a cor do texto do link */
   display: block; /* Exibe o link como um bloco */
 }
+
 /*Estilo para o campo de entrada do formulário*/
 form input{
   width: 1px; /* Define a largura total */
@@ -40,7 +43,6 @@ form input{
   font-size: 25px; /* Define o tamanho da fonte */
   padding-left: 20px; /* Adiciona preenchimento à esquerda */
   margin: 0 auto; /* Centraliza horizontalmente */
-
 }
 
 /*Estilo para o botão dentro da classe 'btn'*/
@@ -62,9 +64,11 @@ button {
   margin-top: 5px; /* Define uma margem superior */
   text-align: center; /* Centraliza o conteúdo */
 }
+
 form{
   display: grid;
 }
+
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
   background-color: rgba(255, 255, 255, 0);
@@ -96,12 +100,14 @@ form{
   border-radius: 20px; /* Arredonda as bordas */
   padding: 0px;
 }
+
 /*Estilo para a div com a classe 'form-cadastro'*/
 .form-cadastro {
   width: 90%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
 }
+
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
 #no, #em, #se,#da, #user {
   border: 1px solid #2b332f; /* Define a borda dos campos */
@@ -109,6 +115,7 @@ form{
   font-size: 15px; /* Define o tamanho da fonte */
   width: 300px; /* Define a largura dos campos */
 }
+
 footer{
   background-color: #000000;
   color: #ffffff;
