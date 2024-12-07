@@ -8,7 +8,7 @@
 
 /*Estilo para o body da página*/
 body {
-  background-color: aliceblue; /* Define a cor de fundo da página */
+  background-color: rgb(255, 255, 255); /* Define a cor de fundo da página */
   height: 100%; /* Define a altura total do body */
   display: block; /* Garante que o body seja exibido como um bloco */
   overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse o tamanho da tela */
@@ -82,7 +82,7 @@ i:hover {
 
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
-  background-color: aliceblue;
+  background-color: rgb(255, 255, 255);
   width: 80%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex; /* Usa layout flexível */
@@ -107,7 +107,7 @@ i:hover {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  background-color:aliceblue;
+  background-color: rgba(240, 248, 255, 0.651);
 }
 /*Estilo para a div com a classe 'form-cadastro'*/
 .form-cadastro {

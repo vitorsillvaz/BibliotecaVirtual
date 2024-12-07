@@ -22,56 +22,34 @@ h3 {
   color: white;
   padding: 0px;
 }
-.icone_livros {
-  width: 24px;
-}
-.logo {
-  padding: 0; /* Sem preenchimento na logo */
-  text-align: left; /* Alinha a logo à esquerda */
-  margin-left: 20px; /* Margem à esquerda */
-  width: 200px; /* Largura da logo */
-  height: 200px; /* Altura da logo */
-  background-color: #6055c700; /* Fundo transparente */
-  display: flex;  /* Usa flexbox para layout */
-}
-/* Estilo de um elemento com classe 'log' */
-.log {
-  height: 220px; /* Altura da imagem */
-  width: 220px; /* Largura da imagem */
-}
 
 .menu {
-  align-items: center; /* Centraliza os itens verticalmente */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  height: 80px; /* Altura do menu */
-  display: flex; /* Flexbox para organizar os itens */
-  background-color: black;/* Fundo com gradiente */
+  background-color: rgb(0, 0, 0);/* Fundo com gradiente */
+  height: 100px; /* Altura do menu */
+  grid-template-columns: auto auto auto;
+  gap: 100px;
+  display: grid;
+  
 }
-.form {
-  display: flex;  /* Flexbox para centralização */
-  margin: 0 auto;/* Centraliza horizontalmente */
-  justify-content:center;  /* Alinha ao centro */
+.logo{
+  margin: 0 auto;
 }
-
 form input {
-  width: 200%;/* Largura total */
+  margin: 0 auto;
+  width: 350px;/* Largura total */
   height: 50px;/* Altura do campo */
   background-color: #ffffff; /* Fundo branco */
   border: none;  /* Remove borda */
-  outline: none; /* Remove contorno ao focar */
   border-radius: 50px; /* Bordas arredondadas */
   color: rgb(0, 0, 0); /* Cor do texto */
   font-size: 25px;  /* Tamanho da fonte */
   padding-left: 20px; /* Espaçamento à esquerda dentro do campo */
 }
-.i1 {
-  color: #ffffff;
-  padding-top: 8px;
-  padding-left: 3px;
-  font-size: 20px;
+.icone{
+  margin: 0 auto;
 }
 .opcoes{
-  background-color: #c0c0c000;
+  background-color: #c0c0c013;
   color: #ffffff;
   text-align: center;
   padding: 0px;
@@ -95,38 +73,7 @@ a {
   color: rgb(0, 0, 0);
   display: block;
 }
-.a-li {
-  margin-left: 5px;
-}
-a:hover {
-  color: #270158;
-}
-.btn button {
-  margin-top: 20px;
-  padding: 10px 0px;
-  font-size: 15px;
-  background: linear-gradient(to right, #000000, #000000);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 80%;
-  height: 80%;
-  color: white;
-}
-.btn {
-  text-align: center;
-  margin: 0 auto;
-}
-.a-btn {
-  text-align: center;
-}
-.i2 {
-  color: #000000;
-  font-size: 20px;
-  margin-top: 10px;
-  text-align: center;
-}
+
 button:hover {
   box-shadow: 0px 0px 3px #28262bce;
   transform: scale(1.05);
@@ -139,25 +86,43 @@ button:hover {
 }
 .biblioteca {
   background-color: rgba(201, 211, 219, 0);
-  width: 90%; /* Define a largura da div */
+  width: 100%; /* Define a largura da div */
   margin: 0 auto; /* Centraliza horizontalmente */
-  display: flex;
-  text-align: center;
   justify-content: center;
   border-radius: 10px;
-  padding: 10px;
-  gap: 10px; /* Espaçamento entre as divs */
+  padding: 20px;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  display: grid;
+}
+#btn-comprar{
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  padding: 5px;
+}
+#btn-comprar a{
+  color: #ffffff;
+  font-size: 20px;
+}
+#btn-comprar:hover{
+  transition: 0.1s;
+  transform: scale(1.05);
 }
 .livro {
-  width: 20%;
-  margin: 0px;
-  border-radius: 10px ;
-  padding: 20px;
+  padding:15px;  /* Preenchimento interno */
+  margin: 0 auto;  /* Centraliza a tabela */
+  width: 250px;  /* Largura do livro */
+  margin: 10px;  /* Sem margens */
+  border: 1px solid rgba(128, 128, 128, 0.356);/* Borda*/
+  border-radius: 10px;  /* Bordas arredondadas */
 }
 .img {
-  height: 270px;
-  width: 100%;
-  border-radius: 10px;
+  height: 200px;  /* Altura da imagem */
+  width: 100%;  /* Largura total */
+  border-radius: 0px;  /* Bordas arredondadas */
 }
 .img:hover {
   transition: 0.1s;
@@ -172,19 +137,16 @@ p {
   cursor: pointer;
   padding: 5px;
 }
-.flex {
-  display: flex;
-  height: 100%;
-}
-.corpo-do-site {
-  margin: 0 auto;
-  align-items: center;
-  display: inline;
-}
 #co > a {
   color: aliceblue;
 }
 #co {
   border-radius: 50px;
   background-color: #3533b8;
+}
+footer{
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
 }

@@ -143,14 +143,12 @@ i:hover{
 }
 /* Estilo de cada livro */
 .livro {
-  background-color: rgb(237, 238, 240);
   padding:15px;  /* Preenchimento interno */
   margin: 0 auto;  /* Centraliza a tabela */
   width: 250px;  /* Largura do livro */
   margin: 10px;  /* Sem margens */
   border: 1px solid rgba(128, 128, 128, 0.356);/* Borda*/
   border-radius: 10px;  /* Bordas arredondadas */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.151), rgba(255, 255, 255, 0.096));
 }
 
 /* Imagem dentro do livro */
