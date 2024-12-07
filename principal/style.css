@@ -22,14 +22,13 @@ h3 {
   color: white;
   padding: 0px;
 }
-
 .menu {
   background-color: rgb(0, 0, 0);/* Fundo com gradiente */
   height: 100px; /* Altura do menu */
   grid-template-columns: auto auto auto;
   gap: 100px;
   display: grid;
-  
+  padding: 20px 0;
 }
 .logo{
   margin: 0 auto;
@@ -47,6 +46,10 @@ form input {
 }
 .icone{
   margin: 0 auto;
+}
+.icone:hover{
+  transition: 0.1s;
+  transform: scale(1.1);
 }
 .opcoes{
   background-color: #c0c0c013;
@@ -73,19 +76,8 @@ a {
   color: rgb(0, 0, 0);
   display: block;
 }
-
-button:hover {
-  box-shadow: 0px 0px 3px #28262bce;
-  transform: scale(1.05);
-  transition: 0.01s;
-}
-.livro {
-  padding: 2px;
-  margin: 0 auto; /* Centraliza a tabela */
-  border-collapse: collapse; /* Junta as bordas das células */
-}
 .biblioteca {
-  background-color: rgba(201, 211, 219, 0);
+  background-color: rgb(255, 255, 255);
   width: 100%; /* Define a largura da div */
   margin: 0 auto; /* Centraliza horizontalmente */
   justify-content: center;
@@ -127,7 +119,6 @@ button:hover {
 .img:hover {
   transition: 0.1s;
   transform: scale(1.05);
-  box-shadow: 0px 0px 13px 0px rgba(21, 5, 80, 0.342);
 }
 p {
   color:#000000;
@@ -137,16 +128,21 @@ p {
   cursor: pointer;
   padding: 5px;
 }
-#co > a {
-  color: aliceblue;
-}
-#co {
-  border-radius: 50px;
-  background-color: #3533b8;
-}
+
 footer{
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   padding: 30px;
+}
+/* Estilo do ícone 2 */
+.i2 {
+  color: #ffffff;  /* Cor do ícone */
+  font-size: 40px;  /* Tamanho da fonte */
+  margin-top: 10px; /* Margem superior */
+  text-align: center;  /* Centraliza o texto */
+}
+i:hover{
+  transition: 0.1s;
+  transform: scale(1.05);
 }

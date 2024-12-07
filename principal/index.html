@@ -7,7 +7,7 @@
   <title>Biblioteca</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="/imagens/icone_livros.png" whith="100px" /><!--icone que aparece na navegação-->
- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     
       <div class="form"><!--dentro da div 'form', adicionamos um form junto de um input(do tipo 'text') para ilustrar um campo de pesquisa-->
         <form>
-          <input type="text" placeholder="Digite sua pesquisa" /><!--o comando 'placeholder' serve para colocar uma mensagem dentro do input-->          
+          <input type="text" placeholder="Digite sua pesquisa:" /><!--o comando 'placeholder' serve para colocar uma mensagem dentro do input-->        
         </form>
       </div><!--fim da div form-->
 
@@ -30,7 +30,7 @@
       </div><!--fim da div icone-->
     </div><!--Fim da div menu-->   
 
-          <div class="opcoes"> <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->          
+     <div class="opcoes"> <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->          
             <ul> <!--lista-->            
               <li><a class="a-li" href="/comédia/index.html">Comédia</a></li><!--direciona para a página comedia-->              
               <li><a class="a-li" href="/romance/index.html">Romance</a></li><!--direciona para a página romance-->              
@@ -42,6 +42,8 @@
             </ul><!--fim da lista-->           
         </div><!--fim da div opcoes-->        
       
+        <hr size="1" /><!-- tag de linha-->
+
         <div class="biblioteca"><!--nessa div vai ficar os 'livros'-->
 
           <div class="livro"><!--essa div fica a indicação de livro-->
@@ -144,6 +146,13 @@
   </main><!--fim main principal-->
   <footer>
     SYSTEM.BOOK
+    <div class="i2">
+            <!--icones das redes sociais-->
+            <i class="fa-brands fa-instagram i2"></i>
+            <i class="fa-brands fa-facebook i2"></i>
+            <i class="fa-brands fa-google i2"></i>
+    </div><!--fim da div das redes-->
+    
    </footer>
 </body>
 </html>
