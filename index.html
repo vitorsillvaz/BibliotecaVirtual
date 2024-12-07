@@ -8,63 +8,57 @@
     <link rel="stylesheet" href="style.css" /><!-- Vincula o arquivo CSS externo que define o estilo da página -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/><!-- Importa a biblioteca Font Awesome para ícones -->
     <link rel="icon" href="/imagens/icone_livros.png"/> <!-- Define o ícone que aparece na aba do navegador-->
-   
-   <script>
-      // Exemplo de código JavaScript
-      function saudacao() {
-        alert("Olá, seja bem-vindo à SYSTEM BOOK! Faça seu cadastro e conheça nossa biblioteca virtual");
-      }
-    </script>
-
+  
   </head>
-  <body onload="saudacao()">
-     
+  <body>
      <main class="principal"> <!-- A tag <main> contém o conteúdo principal da página -->
   
       <div class="menu"><!-- A tag <div> define uma seção genérica, aqui usada para o menu -->
-          <img class="log" src="/Sem título (1).png" /> <!-- Exibe uma imagem como logo -->
+        <div class="logo">
+          <a href="/index.html"><img class="log" src="/Sem título (1).png"  width="350px" height="80px"/></a>
+        </div> <!--fim da div logo-->
       </div><!-- fim da div menu -->
       
-      <div class="corpo-do-site"><!-- Seção que contém o conteúdo principal do site -->
-        <div class="biblioteca"><!-- Seção biblioteca -->
-          <div class="icon"><!-- div para exibir um ícone -->
-            
-            <img class="coruja" src="/imagens/coruja-para-colorir-15-removebg.png" width="250px" /><!-- Exibe uma imagem de coruja -->
-            
-          </div><!-- fim da div icon -->
-          
+      <div class="biblioteca"><!-- Seção biblioteca -->
 
+          <div class="icon"><!-- div para exibir um ícone -->  
+            <img class="coruja" src="/imagens/coruja-para-colorir-15-removebg.png" width="250px" /><!-- Exibe uma imagem de coruja -->
+          </div><!-- fim da div icon -->
+        
           <div class="cadastro"> <!-- Seção de cadastro de usuário -->
            
             <i class="fa-solid fa-circle-user i2" style="font-size: 40px"></i> <!-- Ícone de perfil, importado da biblioteca Font Awesome -->
             <h2 class="titulo">CADASTRE-SE</h2><!-- Título da seção de cadastro -->
 
-            <div class="form-cadastro"><!-- Seção do formulário de cadastro -->
+            <div class="form"><!-- Seção do formulário de cadastro -->
               <form class="form-cadastro"><!-- Início do formulário -->
+                 <label for="no">Informe seu nome:</label>
+                 <input type="text" name="no" id="no" placeholder="Seu nome:" required /><!-- Campo de texto para o nome completo, obrigatório -->
+                  <br>
 
-               <p>Nome completo</p> 
-                 <input type="text" id="no" placeholder="Seu nome:" required /><!-- Campo de texto para o nome completo, obrigatório -->
-               <p>Crie um Username</p>
-                 <input type="text" id="user" placeholder="@exemplo" required /><!-- Campo de texto para o nome de usuário, obrigatório -->
-               <p>Informe seu email</p>
-                 <input type="email" id="em" placeholder="Ex: @gmail.com" required /><!-- Campo para o e-mail, obrigatório -->
-               <p>Data de Nascimento</p>
-                 <input type="date" id="da" required><!--campo para cadastrar a data de nascimento-->
-                 <p>Crie uma senha</p>
-                 <input type="password" id="se" placeholder="Cadastre uma senha:" required/><!-- Campo para cadastrar uma senha -->
-            
-                <div class="btn-enviar"><!-- Seção para o botão de envio do formulário -->
-                  <div class="btn">
-                    <!-- Botão -->
-                    <button type="submit">
+                 <label for="user">Crie um Username:</label>
+                 <input type="text" name="user" id="user" placeholder="@exemplo" required /><!-- Campo de texto para o nome de usuário, obrigatório -->
+                 <br>
+
+                 <label for="em">Informe seu email:</label>
+                 <input type="email" name="em" id="em" placeholder="Ex: @gmail.com" required /><!-- Campo para o e-mail, obrigatório -->
+                 <br>
+
+                 <label for="da">Data de Nascimento:</label>
+                 <input type="date" name="da" id="da" required><!--campo para cadastrar a data de nascimento-->
+                  <br>
+
+                 <label for="se">Crie uma senha:</label>
+                 <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" required/><!-- Campo para cadastrar uma senha -->
+                 <br>
+                 <button type="submit" class="btn-enviar">
                       <a href="/login/index.html">Fazer Login</a>
-                    </button>
-                    <!-- Botão que, ao ser clicado, redireciona para a página principal -->
-                  </div>
-                </div><!-- fim da div btn-enviar -->
-              </form><!-- fim do form-cadastro -->
-            </div>
+                 </button><!-- Botão que, ao ser clicado, redireciona para a página login -->
 
+              </form><!-- fim do form-cadastro -->
+
+            </div><!--fim da div form-cadastro-->
+            <hr size="1px" style="margin-top: 10px;">
             <div class="i2"><!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->
               <i class="fa-brands fa-instagram i2"></i>
               <i class="fa-brands fa-facebook i2"></i>
@@ -73,7 +67,9 @@
 
           </div><!-- fim da div cadastro -->
         </div><!-- fim da div biblioteca -->
-      </div><!-- fim da div corpo-do-site -->
     </main><!-- fim da tag main -->
+    <footer>
+      SYSTEM.BOOK
+    </footer>
   </body>
 </html>
