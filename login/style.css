@@ -107,7 +107,13 @@ form{
   margin: 0 auto; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
 }
-
+.msg{
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin: 0px 0 0 1px;
+  padding: 2px 0;
+}
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
 #no, #em, #se,#da, #user {
   border: 1px solid #2b332f; /* Define a borda dos campos */

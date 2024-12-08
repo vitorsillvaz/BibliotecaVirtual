@@ -31,21 +31,38 @@
             <h2 class="titulo">CADASTRE-SE</h2><!-- Título da seção de cadastro -->
 
             <div class="form"><!-- Seção do formulário de cadastro -->
-              <form class="form-cadastro"><!-- Início do formulário -->
-                 <label for="no">Informe seu nome:</label>
-                 <input type="text" name="no" id="no" placeholder="Seu nome:" required /><!-- Campo de texto para o nome completo, obrigatório -->
 
-                 <label for="user">Crie um Username:</label>
-                 <input type="text" name="user" id="user" placeholder="@exemplo" required /><!-- Campo de texto para o nome de usuário, obrigatório -->
+              <form id="form" class="form-cadastro"><!-- Início do formulário -->
 
-                 <label for="em">Informe seu email:</label>
-                 <input type="email" name="em" id="em" placeholder="Ex: @gmail.com" required /><!-- Campo para o e-mail, obrigatório -->
-                
-                 <label for="da">Data de Nascimento:</label>
-                 <input type="date" name="da" id="da" required><!--campo para cadastrar a data de nascimento-->
+                <div><!-- Campo de texto para o nome completo, obrigatório -->
+                  <label for="no">Informe seu nome:</label><br>
+                  <input type="text" name="no" id="no" placeholder="Nome completo" class="input" oninput="validarNome()" required />
+                  <span class="msg">digite seu nome completo <br></span>
+                </div>
                   
-                 <label for="se">Crie uma senha:</label>
-                 <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" required/><!-- Campo para cadastrar uma senha -->
+                <div><!-- Campo de texto para o nome de usuário, obrigatório -->
+                 <label for="user">Crie um Username:</label><br>
+                 <input type="text" name="user" id="user" placeholder="@exemplo" class="input"  oninput="validarUser()" required />
+                 <span class="msg">Seu user deve ter um "@"</span>
+                </div>
+
+                <div><!-- Campo para o e-mail, obrigatório -->
+                 <label for="em">Informe seu email:</label><br>
+                 <input type="email" name="em" id="em" placeholder="exemplo@gmail.com" class="input" oninput="validarEmail()" required/>
+                 <span class="msg">Email inválido</span>
+                </div>
+
+                <div><!-- Campo para cadastrar uma senha -->
+                 <label for="se">Crie uma senha:</label><br>
+                 <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" class="input"  oninput="validarSenha()" required/>
+                 <span class="msg">Senha fraca</span>
+                </div>
+                 
+                <div><!--campo para cadastrar a data de nascimento-->
+                 <label for="da">Data de Nascimento:</label><br>
+                 <input type="date" name="da" id="da" class="input" required>
+                </div> 
+                
                  <br>
                  <button type="submit" class="btn-enviar">
                       <a href="/principal/index.html">Fazer Login</a>
@@ -64,8 +81,57 @@
           </div><!-- fim da div cadastro -->
         </div><!-- fim da div biblioteca -->
     </main><!-- fim da tag main -->
+
+    <script>
+       const form = document.getElementById('form');
+       const campo = document.querySelectorAll('.input');
+       const msg = document.querySelectorAll('.msg');
+      
+       function verErro(index){
+            campo[index].style.border = "2px solid red";
+            msg[index].style.display = 'block';
+       }
+       function removeErro(index){
+            campo[index].style.border = "1px solid";
+            msg[index].style.display = 'none';
+       }
+       function validarNome(){
+            if (campo[0].value.length < 10) {
+              verErro(0);
+            } else {
+              removeErro(0);
+            }
+       }
+  
+       function validarUser(){
+        if (!campo[1].value.includes("@")) {
+              verErro(1);
+            } else {
+              removeErro(1);
+            }
+       }
+
+       function validarEmail(){
+         if (!campo[2].value.includes("@gmail.com") ) {
+              verErro(2);
+            } else {
+              removeErro(2);
+            }
+       }
+       function validarSenha(){
+        if (campo[3].value.length < 6) {
+              verErro(3);
+            } else {
+              removeErro(3);
+            }
+       }
+    </script>
+
     <footer>
-      SYSTEM.BOOK
+      SYSTEM.BOOK <br><br>
+      Criadores: João Vitor da Silva e Julia Gabriela <br>
+      Professor: Anderson Pablo <br>
+      Disciplina: Autoria Web <br>
     </footer>
   </body>
 </html>
