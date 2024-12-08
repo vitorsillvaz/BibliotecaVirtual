@@ -78,7 +78,7 @@ button {
 .cadastro {
   border: 1px solid; /* Define uma borda sólida */
   width: 500px; /* Define a largura como 50% */
-  height: 350px;
+  height: 380px;
   border-radius: 20px; /* Arredonda as bordas */
   margin: 0 auto;
   align-items: center;
@@ -103,7 +103,12 @@ p{
   font-size: 15px; /* Define o tamanho da fonte */
   width: 300px; /* Define a largura dos campos */
 }
-
+.msg{
+  display: none;
+  color: red;
+  font-size: 16px;
+  margin: 3px 0 0 1px;
+}
 footer{
   background-color: #000000;
   color: #ffffff;
