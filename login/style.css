@@ -47,16 +47,20 @@ form input{
 
 /*Estilo para o botão dentro da classe 'btn'*/
 button {
-  width: 30%; /* Define a largura total */
-  height: 50px; /* Define a altura do campo */
-  background-color: #000000; /* Define a cor de fundo branca */
-  border: none; /* Remove bordas */
-  outline: none; /* Remove a borda ao focar no campo */
-  border-radius: 50px; /* Arredonda as bordas do campo */
-  font-size: 25px; /* Define o tamanho da fonte */
-  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-top: 10px; /* Define a margem superior */
+  padding: 10px 0px; /* Adiciona preenchimento interno vertical */
+  font-size: 15px; /* Define o tamanho da fonte */
+  background-color: #000000; /* Aplica um gradiente de fundo */
+  border: none; /* Remove a borda */
+  border-radius: 30px; /* Arredonda as bordas do botão */
+  cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+  width: 30%; /* Define a largura como 50% */
+  height: 40px; /* Define a altura como 80% */
+  color: white; /* Define a cor do texto como branca */
 }
-
+table{
+  width: 100%;
+}
 /*Estilo para ícones com a classe 'i2'*/
 .i2 {
   color: #000000; /* Define a cor dos ícones */

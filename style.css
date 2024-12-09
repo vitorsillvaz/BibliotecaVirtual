@@ -93,9 +93,12 @@ p{
   width: 90%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   text-align: center; /* Centraliza o texto */
-  padding: 10px;
+  padding: 0px;
 }
-
+table{
+  margin: 0 auto;
+  width: 100%;
+}
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
  #user, #se {
   border: 1px solid #2b332f; /* Define a borda dos campos */

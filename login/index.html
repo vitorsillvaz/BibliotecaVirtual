@@ -31,45 +31,49 @@
             <h2 class="titulo">CADASTRE-SE</h2><!-- Título da seção de cadastro -->
 
             <div class="form"><!-- Seção do formulário de cadastro -->
-
-              <form id="form" class="form-cadastro"><!-- Início do formulário -->
-
-                <div><!-- Campo de texto para o nome completo, obrigatório -->
-                  <label for="no">Informe seu nome:</label><br>
-                  <input type="text" name="no" id="no" placeholder="Nome completo" class="input" oninput="validarNome()" required />
-                  <span class="msg">digite seu nome completo <br></span>
-                </div>
-                  
-                <div><!-- Campo de texto para o nome de usuário, obrigatório -->
-                 <label for="user">Crie um Username:</label><br>
-                 <input type="text" name="user" id="user" placeholder="@exemplo" class="input"  oninput="validarUser()" required />
-                 <span class="msg">Seu user deve ter um "@"</span>
-                </div>
-
-                <div><!-- Campo para o e-mail, obrigatório -->
-                 <label for="em">Informe seu email:</label><br>
-                 <input type="email" name="em" id="em" placeholder="exemplo@gmail.com" class="input" oninput="validarEmail()" required/>
-                 <span class="msg">Email inválido</span>
-                </div>
-
-                <div><!-- Campo para cadastrar uma senha -->
-                 <label for="se">Crie uma senha:</label><br>
-                 <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" class="input"  oninput="validarSenha()" required/>
-                 <span class="msg">Senha fraca</span>
-                </div>
-                 
-                <div><!--campo para cadastrar a data de nascimento-->
-                 <label for="da">Data de Nascimento:</label><br>
-                 <input type="date" name="da" id="da" class="input" required>
-                </div> 
-                
-                 <br>
-                 <button type="submit" class="btn-enviar">
-                      <a href="/principal/index.html">Fazer Login</a>
-                 </button><!-- Botão que, ao ser clicado, redireciona para a página login -->
-
-              </form><!-- fim do form-cadastro -->
-
+             <form action="/principal/index.html">
+                   <table><!--tabela para organizar bem o formulario-->
+                    <tr>
+                      <td>
+                        <label for="no">Informe seu nome:</label><br>
+                        <input type="text" name="no" id="no" placeholder="Nome completo" class="input" oninput="validarNome()" required />
+                        <span class="msg">digite seu nome completo <br></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="user">Crie um Username:</label><br>
+                        <input type="text" name="user" id="user" placeholder="@exemplo" class="input"  oninput="validarUser()" required />
+                        <span class="msg">Seu user deve ter um "@"</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="em">Informe seu email:</label><br>
+                        <input type="email" name="em" id="em" placeholder="exemplo@gmail.com" class="input" oninput="validarEmail()" required/>
+                        <span class="msg">Email inválido</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="se">Crie uma senha:</label><br>
+                        <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" class="input"  oninput="validarSenha()" required/>
+                        <span class="msg">Senha fraca</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="da">Data de Nascimento:</label><br>
+                        <input type="date" name="da" id="da" class="input" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="submit">Fazer Login</button>
+                      </td>
+                    </tr>
+                  </table><!--fim da tabela-->
+             </form>
             </div><!--fim da div form-cadastro-->
             <hr size="1px" style="margin-top: 10px;">
             <div class="i2"><!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->

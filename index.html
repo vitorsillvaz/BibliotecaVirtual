@@ -27,29 +27,37 @@
 
         <div class="cadastro"> <!-- Seção de cadastro de usuário -->
         <div class="form-cadastro"><!-- Seção do formulário de cadastro -->
-              <i class="fa-solid fa-circle-user i2" style="font-size: 60px"></i><!-- Ícone de perfil, importado da biblioteca Font Awesome -->
-              <h2 class="titulo">LOGIN</h2><!-- Título da seção de cadastro -->
 
-          <form id="form">
-              <div>
-                   <input type="text" name="user" id="user" placeholder="seu user" class="input" oninput="validarNome()">
-                   <span class="msg">o user deve conter '@'</span>
-              </div>
-              <div>
-                   <input type="password" name="senha" id="se" placeholder="senha" class="input" oninput="validarSenha()">
-                   <span class="msg">No mínino 6 caracteres</span>
-              </div>
-
-              <div>
-                  <button type="submit"><a href="/principal/index.html" style="color: white;">Entrar</a></button><br>
-                  <p>Não tem conta? <a href="/login/index.html">Cadastre-se</a></p>
-              </div>
-          </form>
-
+              <form action="/principal/index.html" id="form">
+              <table>
+                <tr>
+                  <td>
+                    <i class="fa-solid fa-circle-user i2" style="font-size: 60px"></i><!-- Ícone de perfil, importado da biblioteca Font Awesome -->
+                    <h2 class="titulo">LOGIN</h2><!-- Título da seção de cadastro -->
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="user" id="user" placeholder="seu user" class="input" oninput="validarNome()" required>
+                    <span class="msg">o user deve conter '@'</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="password" name="senha" id="se" placeholder="senha" class="input" oninput="validarSenha()" required>
+                    <span class="msg">No mínino 6 caracteres</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button type="submit">Entrar</button><br>
+                    <p>Não tem conta? <a href="/login/index.html">Cadastre-se</a></p>
+                  </td>
+                </tr>
+              </table>
+            </form>
           </div><!--fim da div form-cadastro-->
-
-    
-
+<br>
         <hr size="1" color="black">
             <div class="i2"> <!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->
               <i class="fa-brands fa-instagram i2"></i>
