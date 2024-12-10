@@ -28,7 +28,7 @@
         <div class="cadastro"> <!-- Seção de cadastro de usuário -->
         <div class="form-cadastro"><!-- Seção do formulário de cadastro -->
 
-              <form action="/principal/index.html" id="form">
+              <form action="/principal/index.html" onsubmit="return validarForm()" id="form">
               <table>
                 <tr>
                   <td>
@@ -38,13 +38,13 @@
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" name="user" id="user" placeholder="seu user" class="input" oninput="validarNome()" required>
+                    <input type="text" id="user" placeholder="seu user" class="input" oninput="validarUser()" >
                     <span class="msg">o user deve conter '@'</span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input type="password" name="senha" id="se" placeholder="senha" class="input" oninput="validarSenha()" required>
+                    <input type="password" id="se" placeholder="senha" class="input" oninput="validarSenha()">
                     <span class="msg">No mínino 6 caracteres</span>
                   </td>
                 </tr>
@@ -55,20 +55,9 @@
                   </td>
                 </tr>
               </table>
-            </form>
-          </div><!--fim da div form-cadastro-->
-<br>
-        <hr size="1" color="black">
-            <div class="i2"> <!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->
-              <i class="fa-brands fa-instagram i2"></i>
-              <i class="fa-brands fa-facebook i2"></i>
-              <i class="fa-brands fa-google i2"></i>
-            </div><!-- fim da div i2 -->
-          </div><!-- fim da div cadastro -->
-        </div><!-- fim da div biblioteca -->
+          </form>
 
-    </main><!-- fim da tag main -->
-<script>
+          <script>
            const form = document.getElementById('form'); //variavel que armazena o form
            const campo = document.querySelectorAll('.input'); //variavel que armazena os textos do input
            const msg = document.querySelectorAll('.msg'); //variavel que armazena as mensagens de erro
@@ -83,21 +72,51 @@
               msg[index].style.display = 'none';//a mensagem de erro some
           }
 
-          function validarNome(){//função para verificar se o user tem o caracter @
+          function validarUser(){//função para verificar se o user tem o caracter @
               if(!campo[0].value.includes("@")){
                 verErro(0); //se o texto não tiver @, aparece a mensagem de erro
+                return false;
               }else{
                 removeErro(0); //se tiver @, o erro some
+                return true;
               }
+              
           }
           function validarSenha(){//função para validar senha
               if(campo[1].value.length < 6){
                 verErro(1);  //se a senha tiver menos de 6 caracter, a mensagem de erro aparece
+                return false;
               }else{
                removeErro(1); // se tiver 6 ou mais, o erro some
+               return true;
               }
           }
+          function validarForm(){//função para validar os formulários
+                  var user = document.getElementById("user").value; //váriavel que armazena o nome
+                  var senha = document.getElementById("se").value;  //váriavel que armazena a senha
+                 
+                if (user == "" || senha == "") {//verifica se os inputs estão vazios
+                     alert("Por favor, preencha o campo vazio.");
+                     return false; //impede o envio do formulario vazio
+                } else {
+                     return true;//se o estiver preenchido, permite o envio do formulario
+                } 
+          }
     </script>
+
+          </div><!--fim da div form-cadastro-->
+<br>
+        <hr size="1" color="black">
+            <div class="i2"> <!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->
+              <i class="fa-brands fa-instagram i2"></i>
+              <i class="fa-brands fa-facebook i2"></i>
+              <i class="fa-brands fa-google i2"></i>
+            </div><!-- fim da div i2 -->
+          </div><!-- fim da div cadastro -->
+        </div><!-- fim da div biblioteca -->
+
+    </main><!-- fim da tag main -->
+
 
 <footer>
   SYSTEM.BOOK <br><br>

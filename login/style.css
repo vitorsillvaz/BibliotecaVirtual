@@ -119,7 +119,7 @@ form{
   padding: 2px 0;
 }
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
-#no, #em, #se,#da, #user {
+#no, #em, #se, #user {
   border: 1px solid #2b332f; /* Define a borda dos campos */
   margin-top: 2px; /* Adiciona uma margem superior */
   font-size: 15px; /* Define o tamanho da fonte */
