@@ -112,11 +112,11 @@ form{
   text-align: center; /* Centraliza o texto */
 }
 .msg{
-  display: none;
-  color: red;
-  font-size: 12px;
-  margin: 0px 0 0 1px;
-  padding: 2px 0;
+  display: none;/*deixa a mensagem 'invisível', não aparece inicialmente*/
+  color: red;/*cor do texto*/
+  font-size: 12px;/*tamanho da fonte*/
+  margin: 0px 0 0 1px;/*margem externa da mensagem*/
+  padding: 2px 0;/*margem interna da mensagem*/
 }
 /*Estilo para os campos de input com os IDs 'no', 'em' e 'se'*/
 #no, #em, #se, #user {
@@ -127,7 +127,7 @@ form{
 }
 
 footer{
-  background-color: #000000;
+  background-color: #000000; /*cor*/
   color: #ffffff;
   text-align: center;
   padding: 20px;
