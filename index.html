@@ -29,7 +29,7 @@
         <div class="form-cadastro"><!-- Seção do formulário de cadastro -->
 
               <form action="/principal/index.html" onsubmit="return validarForm()" id="form">
-              <table>
+              <table><!--tabela para orgazinar o formulario-->
                 <tr>
                   <td>
                     <i class="fa-solid fa-circle-user i2" style="font-size: 60px"></i><!-- Ícone de perfil, importado da biblioteca Font Awesome -->
@@ -38,24 +38,24 @@
                 </tr>
                 <tr>
                   <td>
-                    <input type="text" id="user" placeholder="seu user" class="input" oninput="validarUser()" >
-                    <span class="msg">o user deve conter '@'</span>
+                    <input type="text" id="user" placeholder="seu user" class="input" oninput="validarUser()" > <!--input para nome de usuario(username)-->
+                    <span class="msg">o user deve conter '@'</span><!--mensagem de erro-->
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <input type="password" id="se" placeholder="senha" class="input" oninput="validarSenha()">
-                    <span class="msg">No mínino 6 caracteres</span>
+                    <input type="password" id="se" placeholder="senha" class="input" oninput="validarSenha()"> <!--input para senha-->
+                    <span class="msg">No mínino 6 caracteres</span><!--mensagem de erro-->
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <button type="submit">Entrar</button><br>
-                    <p>Não tem conta? <a href="/login/index.html">Cadastre-se</a></p>
+                    <button type="submit">Entrar</button><br><!--botão submit para enviar o form, e entrar na proxima pagina.-->
+                    <p>Não tem conta? <a href="/login/index.html">Cadastre-se</a></p><!--link que direciona para fazer cadastro, caso não tenha.-->
                   </td>
                 </tr>
-              </table>
-          </form>
+              </table><!--fim  da tabela-->
+          </form><!--fim do form-->
 
           <script>
            const form = document.getElementById('form'); //variavel que armazena o form
@@ -118,7 +118,7 @@
     </main><!-- fim da tag main -->
 
 
-<footer>
+<footer><!--rodapé com algumas informações-->
   SYSTEM.BOOK <br><br>
   Criadores: João Vitor da Silva e Julia Gabriela <br>
   Professor: Anderson Pablo <br>

@@ -36,38 +36,38 @@
                     <tr>
                       <td>
                         <label for="no">Informe seu nome:</label><br>
-                        <input type="text" name="no" id="no" placeholder="Nome completo" class="input" oninput="validarNome()"  />
-                        <span class="msg">digite seu nome completo <br></span>
+                        <input type="text" name="no" id="no" placeholder="Nome completo" class="input" oninput="validarNome()" /><!--input para o nome, chamando a função que valida-->
+                        <span class="msg">digite seu nome completo <br></span><!--mensagem de erro que só aparece se o nome não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <label for="user">Crie um Username:</label><br>
-                        <input type="text" name="user" id="user" placeholder="@exemplo" class="input"  oninput="validarUser()"  />
-                        <span class="msg">Seu user deve ter um "@"</span>
+                        <input type="text" name="user" id="user" placeholder="@exemplo" class="input"  oninput="validarUser()"/><!--input para o nome de usuário(username), chamando a função que valida o user.-->
+                        <span class="msg">Seu user deve ter um "@"</span><!--mensagem de erro que só aparece se o user não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <label for="em">Informe seu email:</label><br>
-                        <input type="email" name="em" id="em" placeholder="exemplo@gmail.com" class="input" oninput="validarEmail()" />
-                        <span class="msg">Email inválido</span>
+                        <input type="email" name="em" id="em" placeholder="exemplo@gmail.com" class="input" oninput="validarEmail()" /><!--input para o email, chamando a função que valida.-->
+                        <span class="msg">Email inválido</span><!--mensagem de erro que só aparece se o email não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <label for="se">Crie uma senha:</label><br>
-                        <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" class="input"  oninput="validarSenha()" />
-                        <span class="msg">Senha fraca</span>
+                        <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" class="input"  oninput="validarSenha()"/><!--input para a senha, chamando a função que valida-->
+                        <span class="msg">Senha fraca</span><!--mensagem de erro que só aparece se a senha não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <button type="submit">Fazer Login</button>
+                        <button type="submit">Fazer Login</button><!--botão para "enviar" o form-->
                       </td>
                     </tr>
                   </table><!--fim da tabela-->
-             </form>
+             </form><!--fim do form-->
        <script>
               const form = document.getElementById('form'); //variavel que armazena o form
               const campo = document.querySelectorAll('.input');//variavel que armazena os textos do input
