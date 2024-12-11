@@ -1,6 +1,4 @@
-
-/*Estilo geral*/
-* {
+* {/*Estilo geral*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -70,13 +68,11 @@ li:hover {
   background-color: rgb(207, 221, 233);
   border-radius: 0px;
 }
-/* Links */
-a {
+a {/* Links */
   text-decoration: none;  /* Remove sublinhado dos links */
   color: rgb(0, 0, 0);  /* Cor preta para o link */
   display: block;  /* Exibe o link como bloco */
 }
-
 #env {
   font-size: 15px;
   background: linear-gradient(to right, #000000, #000000);
@@ -88,12 +84,6 @@ a {
   color: white;
   text-align: center;
   padding-right: 50px;
-}
-.i2{
-  color: #000000;
-  font-size: 40px;
-  margin-top: 10px;
-  text-align: center;
 }
 .flex{
   display: flex;
@@ -163,25 +153,20 @@ a {
   height: 50px;
   padding-left: 20px;
 }
-
-/* Estilo para o link */
-#co>a {
+#co>a {/* Estilo para o link */
   color: rgb(0, 0, 0);  /* Cor do link */
 }
-
 #co {
   background-color: rgb(207, 221, 233);
   color:#000000 ;
 }
-
-footer{
+footer{/**estilo do rodapé*/
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   padding: 30px;
 }
-/* Estilo do ícone 2 */
-.i2 {
+.i2 {/* Estilo do ícone 2 */
   color: #ffffff;  /* Cor do ícone */
   font-size: 40px;  /* Tamanho da fonte */
   margin-top: 10px; /* Margem superior */

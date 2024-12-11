@@ -107,7 +107,7 @@ table{
   width: 300px; /* Define a largura dos campos */
 }
 .msg{
-  display: none;
+  display: none; /*esconde o elemento*/
   color: red;
   font-size: 16px;
   margin: 3px 0 0 1px;

@@ -35,28 +35,28 @@
                    <table><!--tabela para organizar bem o formulario-->
                     <tr>
                       <td>
-                        <label for="no">Informe seu nome:</label><br>
+                        <label for="no">Informe seu nome:</label><br><!--label para associar um rótulo de texto ao input do nome-->
                         <input type="text" name="no" id="no" placeholder="Nome completo" class="input" oninput="validarNome()" /><!--input para o nome, chamando a função que valida-->
                         <span class="msg">digite seu nome completo <br></span><!--mensagem de erro que só aparece se o nome não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="user">Crie um Username:</label><br>
+                        <label for="user">Crie um Username:</label><br><!--label para associar um rótulo de texto ao input do user-->
                         <input type="text" name="user" id="user" placeholder="@exemplo" class="input"  oninput="validarUser()"/><!--input para o nome de usuário(username), chamando a função que valida o user.-->
                         <span class="msg">Seu user deve ter um "@"</span><!--mensagem de erro que só aparece se o user não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="em">Informe seu email:</label><br>
+                        <label for="em">Informe seu email:</label><br><!--label para associar um rótulo de texto ao input do email-->
                         <input type="email" name="em" id="em" placeholder="exemplo@gmail.com" class="input" oninput="validarEmail()" /><!--input para o email, chamando a função que valida.-->
                         <span class="msg">Email inválido</span><!--mensagem de erro que só aparece se o email não for validado-->
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="se">Crie uma senha:</label><br>
+                        <label for="se">Crie uma senha:</label><br><!--label para associar um rótulo de texto ao input da senha-->
                         <input type="password" name="se" id="se" placeholder="Cadastre uma senha:" class="input"  oninput="validarSenha()"/><!--input para a senha, chamando a função que valida-->
                         <span class="msg">Senha fraca</span><!--mensagem de erro que só aparece se a senha não for validado-->
                       </td>
@@ -124,8 +124,10 @@
           }
     </script>     
             
-            </div><!--fim da div form-cadastro-->
+   </div><!--fim da div form-cadastro-->
+
             <hr size="1px" style="margin-top: 10px;">
+
             <div class="i2"><!-- Ícones das redes sociais, todos importados da biblioteca Font Awesome -->
               <i class="fa-brands fa-instagram i2"></i>
               <i class="fa-brands fa-facebook i2"></i>

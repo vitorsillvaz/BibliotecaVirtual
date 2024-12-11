@@ -1,29 +1,26 @@
-/* Reset geral para remover margens e preenchimentos */
-* {
+
+* {/* Reset geral para remover margens e preenchimentos */
   margin: 0; /* Remove a margem */
   padding: 0;  /* Remove o preenchimento */
   box-sizing: border-box;/* Inclui as bordas e o preenchimento nas dimensões totais dos elementos */
   font-family: "Poppins", sans-serif;  /* Define a fonte padrão do site */
 }
-/* Estilo do corpo da página */
-body {
+body {/* Estilo do corpo da página */
   background-color: #ffffff; /* Cor de fundo */
   height: 100%;  /* Define a altura do corpo como 100% da janela */
   display: block;  /* Exibe o corpo como bloco */
 }
-/* Estilo do título principal */
-h1 {
+h1 {/* Estilo do título principal */
   color: white;  /* Cor do texto */
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Fonte estilizada para o título */
 }
-/* Estilo de subtítulo */
-h3 {
+h3 {/* Estilo de subtítulo */
   font-size: 20px;  /* Tamanho da fonte */
   margin-left: 0px;  /* Sem margem à esquerda */
   color: white;  /* Cor do texto */
   padding: 0px;  /* Sem preenchimento */
 }
-.menu {
+.menu {/* Estilo de menu */
   background-color: rgb(0, 0, 0);/* Fundo com gradiente */
   height: 100px; /* Altura do menu */
   grid-template-columns: auto auto auto;
@@ -34,7 +31,7 @@ h3 {
 .logo{
   margin: 0 auto;
 }
-form input {
+form input {/* Estilo do form */
   margin: 0 auto;
   width: 350px;/* Largura total */
   height: 50px;/* Altura do campo */
@@ -52,7 +49,7 @@ form input {
   transition: 0.1s;
   transform: scale(1.1);
 }
-.opcoes{
+.opcoes{/* Estilo das opções */
   background-color: #c0c0c013;
   color: #ffffff;
   text-align: center;
@@ -72,14 +69,12 @@ li:hover {
   background-color: rgb(207, 221, 233);
   border-radius: 0px;
 }
-/* Links */
-a {
+a {/* Links */
   text-decoration: none;  /* Remove sublinhado dos links */
   color: rgb(0, 0, 0);  /* Cor preta para o link */
   display: block;  /* Exibe o link como bloco */
 }
-/* Biblioteca */
-.biblioteca {
+.biblioteca {/* Biblioteca */
   background-image: linear-gradient(to right, #c0c0c028,rgb(255, 255, 255), rgb(255, 255, 255) , #c0c0c028);  /* Cor de fundo */
   width: 100%;  /* Largura da div */
   margin: 0 auto;  /* Centraliza horizontalmente */
@@ -89,7 +84,7 @@ a {
   gap: 30px;
   display: grid;
 }
-#btn-comprar{
+#btn-comprar{/* Estilo do botão comprar*/
   text-decoration: none;
   font-size: 20px;
   border: none;
@@ -97,16 +92,15 @@ a {
   background-color: #000000;
   padding: 5px;
 }
-#btn-comprar a{
+#btn-comprar a{/* Estilo do botão */
   color: #ffffff;
   font-size: 20px;
 }
-#btn-comprar:hover{
+#btn-comprar:hover{/* Estilo do botão*/
   transition: 0.1s;
   transform: scale(1.05);
 }
-/* Estilo de cada livro */
-.livro {
+.livro {/* Estilo de cada livro */
   padding:15px;  /* Preenchimento interno */
   margin: 0 auto;  /* Centraliza a tabela */
   width: 250px;  /* Largura do livro */
@@ -114,22 +108,16 @@ a {
   border: 1px solid rgba(128, 128, 128, 0.356);/* Borda*/
   border-radius: 10px;  /* Bordas arredondadas */
 }
-
-/* Imagem dentro do livro */
-.img {
+.img {/* Imagem dentro do livro */
   height: 200px;  /* Altura da imagem */
   width: 100%;  /* Largura total */
   border-radius: 0px;  /* Bordas arredondadas */
 }
-
-/* Animação ao passar o mouse sobre a imagem */
-.img:hover {
+.img:hover {/* Animação ao passar o mouse sobre a imagem */
   transition: 0.1s;  /* Duração da transição */
   transform: scale(1.05);  /* Amplia levemente a imagem */
 }
-
-/* Parágrafo */
-p {
+p {/* Parágrafo */
   color: #000000;  /* Cor do texto */
   font-family: Arial, Helvetica, sans-serif;  /* Fonte */
   text-align: left;  /* Alinha o texto à esquerda */
@@ -137,25 +125,20 @@ p {
   cursor: pointer;  /* Altera o cursor ao passar o mouse */
   padding: 5px;  /* Preenchimento interno */
 }
-
-/* Estilo para o link */
-#co>a {
+#co>a {/* Estilo para o link */
   color: rgb(0, 0, 0);  /* Cor do link */
 }
-
-#co {
+#co {/* Estilo do ícone 2 */
   background-color: rgb(207, 221, 233);
   color:#000000 ;
 }
-
-footer{
+footer{/* Estilo do rodapé */
   background-color: #000000;
   color: #ffffff;
   text-align: center;
   padding: 30px;
 }
-/* Estilo do ícone 2 */
-.i2 {
+.i2 {/* Estilo do ícone 2 */
   color: #ffffff;  /* Cor do ícone */
   font-size: 40px;  /* Tamanho da fonte */
   margin-top: 10px; /* Margem superior */

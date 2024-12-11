@@ -127,8 +127,8 @@ form{
 }
 
 footer{
-  background-color: #000000; /*cor*/
-  color: #ffffff;
-  text-align: center;
-  padding: 20px;
+  background-color: #000000; /*cor de fundo do rodapé*/
+  color: #ffffff;/*cor do texto*/
+  text-align: center;/* Centraliza o texto */
+  padding: 20px; /*margem interna*/
 }
