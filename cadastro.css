@@ -10,7 +10,7 @@
 body {
   height: 100%; /* Define a altura total do body */
   display: block; /* Garante que o body seja exibido como um bloco */
-  background-image: linear-gradient(to right, #c0c0c079,rgb(255, 255, 255), rgb(255, 255, 255) , rgba(255, 255, 255, 0.521));
+ background-color: #000000;
 }
 
 .menu {
@@ -75,7 +75,7 @@ form{
 
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
-  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(to right, #e7e5e5,rgb(255, 255, 255), rgb(255, 255, 255) , #e9e7e7);/* Define a cor de fundo da página */
   width: 80%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex; /* Usa layout flexível */

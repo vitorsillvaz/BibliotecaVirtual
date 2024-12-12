@@ -8,7 +8,7 @@
 
 /*Estilo para o body da página*/
 body {
-  background-image: linear-gradient(to right, #c0c0c079,rgb(255, 255, 255), rgb(255, 255, 255) , #c0c0c079);/* Define a cor de fundo da página */
+  background-color: #000000;
   height: 100%; /* Define a altura total do body */
   display: block; /* Garante que o body seja exibido como um bloco */
 }
@@ -60,6 +60,7 @@ button {
 
 /*Estilo para a div com a classe 'biblioteca'*/
 .biblioteca {
+  background-image: linear-gradient(to right, #e7e5e5,rgb(255, 255, 255), rgb(255, 255, 255) , #e9e7e7);/* Define a cor de fundo da página */
   width: 80%; /* Define a largura como 80% */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex; /* Usa layout flexível */
