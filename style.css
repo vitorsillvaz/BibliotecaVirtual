@@ -10,25 +10,6 @@ body {
   height: 100%;
   display: block;
 }
-h1 {
-  color: rgb(0, 0, 0);
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  margin-top: 5px;
-}
-h3 {
-  font-size: 20px;
-  margin-left: 0px;
-  color: white;
-  padding: 0px;
-}
-.icone{
-  margin: 0 auto;
-}
-.icone:hover{
-  transition: 0.1s;
-  transform: scale(1.1);
-}
 .opcoes{
   background-color: #c0c0c013;
   color: #ffffff;
@@ -54,15 +35,13 @@ a {
   color: rgb(0, 0, 0);
   display: block;
 }
+a:hover{
+  color: #000000;
+}
 .biblioteca {
-  background-image: linear-gradient(to right, #c0c0c028,rgb(255, 255, 255), rgb(255, 255, 255) , #c0c0c028);  /* Cor de fundo */
-  width: 80%; /* Define a largura da div */
-  margin: 0 auto; /* Centraliza horizontalmente */
+  width: 100%; /* Define a largura da div */
   justify-content: center;
-  border-radius: 10px;
-  padding: 20px;
   grid-template-columns: auto auto auto;
-  gap: 30px;
   display: grid;
 }
 #btn-comprar{
@@ -72,38 +51,53 @@ a {
   border-radius: 5px;
   background-color: #000000;
   padding: 5px;
+  width: 100%;
 }
 #btn-comprar a{
   color: #ffffff;
-  font-size: 20px;
-}
-#btn-comprar:hover{
-  transition: 0.1s;
-  transform: scale(1.05);
+  font-size: 15px;
 }
 .livro {
-  padding:15px;  /* Preenchimento interno */
   margin: 0 auto;  /* Centraliza a tabela */
   width: 150px;  /* Largura do livro */
   margin: 10px;  /* Sem margens */
-  border: 1px solid rgba(128, 128, 128, 0.356);/* Borda*/
   border-radius: 10px;  /* Bordas arredondadas */
+  box-shadow: 0px 0px 10px 1px #706f6f69;
 }
 .img {
   height: 200px;  /* Altura da imagem */
   width: 100%;  /* Largura total */
-  border-radius: 0px;  /* Bordas arredondadas */
-}
-.img:hover {
-  transition: 0.1s;
-  transform: scale(1.05);
+  border-radius: 10px;  /* Bordas arredondadas */
 }
 p {
   color:#000000;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   font-size: 15px;
-  cursor: pointer;
   padding: 5px;
 }
 
+@media (max-width: 600px) {
+  .log{
+    width: 150px;
+    height: 50px;
+  }
+  .opcoes{
+    width: 60vh;
+    font-size: 10px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  ul{
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0px;
+  }
+  li{
+    padding: 1px 0px;
+    border-radius: 5px;
+  }
+}
