@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #ffffff;
+  background-color: white;
   height: 100%;
   display: block;
 }
@@ -78,7 +78,7 @@ a {
 }
 .biblioteca {
   background-image: linear-gradient(to right, #c0c0c028,rgb(255, 255, 255), rgb(255, 255, 255) , #c0c0c028);  /* Cor de fundo */
-  width: 100%; /* Define a largura da div */
+  width: 80%; /* Define a largura da div */
   margin: 0 auto; /* Centraliza horizontalmente */
   justify-content: center;
   border-radius: 10px;
@@ -106,7 +106,7 @@ a {
 .livro {
   padding:15px;  /* Preenchimento interno */
   margin: 0 auto;  /* Centraliza a tabela */
-  width: 250px;  /* Largura do livro */
+  width: 150px;  /* Largura do livro */
   margin: 10px;  /* Sem margens */
   border: 1px solid rgba(128, 128, 128, 0.356);/* Borda*/
   border-radius: 10px;  /* Bordas arredondadas */
@@ -124,24 +124,8 @@ p {
   color:#000000;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
   padding: 5px;
 }
-footer{
-  background-color: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 30px;
-}
-/* Estilo do ícone 2 */
-.i2 {
-  color: #ffffff;  /* Cor do ícone */
-  font-size: 40px;  /* Tamanho da fonte */
-  margin-top: 10px; /* Margem superior */
-  text-align: center;  /* Centraliza o texto */
-}
-i:hover{
-  transition: 0.1s;
-  transform: scale(1.05);
-}
+
