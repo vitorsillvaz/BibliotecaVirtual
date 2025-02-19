@@ -5,125 +5,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biblioteca</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="principal.css" />
-  <link rel="icon" href="icone_livros.png" whith="100px" /><!--icone que aparece na navegação-->
+  <link rel="icon" href="icone_livros.png" whith="100px" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
   
-  <main class="principal"><!--na main principal está todo o conteudo do site-->
+  <main class="principal">
     <div class="menu">
-      <div class="logo"><!--na div 'logo' está a logo do site dentro de um link, que ao clicar, direciona para a página de login.-->
+      <div class="logo">
         <a href="login.html"><img class="log" src="Sem título (1).png"  width="250px" height="50px"/></a>
-      </div> <!--fim da div logo-->
-      <div class="form"><!--dentro da div 'form', adicionamos um form junto de um input(do tipo 'text') para ilustrar um campo de pesquisa-->
+      </div>
+      <div class="form">
         <form>
-          <input type="text" placeholder="Digite sua pesquisa:" /><!--o comando 'placeholder' serve para colocar uma mensagem dentro do input-->        
+          <input type="text" placeholder="Digite sua pesquisa:" />      
         </form>
-      </div><!--fim da div form-->
+      </div>
       <div class="icone">
         <img width="48" height="50" src="https://img.icons8.com/material-sharp/48/FFFFFF/shopping-cart.png" alt="shopping-cart"/>
-      </div><!--fim da div icone-->
-    </div><!--Fim da div menu-->   
-     <div class="opcoes"> <!--essa div serve para armazanar uma lista de opções que poderão ser escolhidas-->          
-            <ul> <!--lista-->            
-              <li><a class="a-li" href="comedia.html">Comédia</a></li><!--direciona para a página comedia-->              
-              <li><a class="a-li" href="romance.html">Romance</a></li><!--direciona para a página romance-->              
-              <li><a class="a-li" href="acao.html">Ação</a></li><!--direciona para a página ação-->             
-              <li><a class="a-li" href="suspense.html">Suspense</a></li><!--direciona para a página suspense-->                         
-              <li><a class="a-li" href="ajuda.html">Ajuda</a></li> <!--direciona para a página de Ajuda-->
-              <li><a class="a-li" href="#">Sobre</a></li><!--direciona para a página sobre--> 
-              <li><a class="a-li" href="#">Contato</a></li><!-- está só de ilustração, pois não criamos essa página-->              
-            </ul><!--fim da lista-->           
-        </div><!--fim da div opcoes-->       
-        <hr size="1" /><!-- tag de linha-->
-        <div class="biblioteca"><!--nessa div vai ficar os 'livros'-->
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/41jl+tSzfqL._SY445_SX342_.jpg" width="250px" /><!--imagem da capa do livro-->
-            <p>Epaminondas: O gato explicador</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 28,95</h4><!--titlulo com o preço do livro-->
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/7nxu8Gd">Comprar</a></button><!--botão que direciona para o site de compra-->
-          </div><!--fim da div livro--> 
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/71vbRyfPiXL._SL1500_.jpg" width="250px" />
-            <p> Nexus</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 80,98</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/dd0SEtN">Comprar</a></button>
-          </div><!--fim da div livro--> 
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/81ehvI03NYS._SL1500_.jpg" width="250px" />          
-            <p> A psicologia financeira</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 32,75</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/ePIQm33">Comprar</a></button>
-          </div><!--fim da div livro--> 
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/71LBtlVGqHL._SL1500_.jpg" width="250px" />
-            <p> A cirurgiã</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 23,30</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/9guB674">Comprar</a></button>
-          </div><!--fim da div livro-->    
-        <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/81-Ke-SYu2L._SL1500_.jpg" width="250px" />      
-            <p>Aurora ascende: 1</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 44,19</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/ecqhaY0">Comprar</a></button>
-          </div><!--fim da div livro-->    
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/71Xta4Nf7uL._SL1360_.jpg" width="250px" />          
-            <p>Orgulho e Preconceito</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 14,40</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/3H5iRu7">Comprar</a></button>
-          </div><!--fim da div livro-->   
-          <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/71zjlOS6ILL._SL1280_.jpg" width="250px" />    
-            <p> Não Confie em Ninguém</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 52,84</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/eny1PUk">Comprar</a></button>
-          </div><!--fim da div livro-->   
-          <div class="livro"> <!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/6175IU0qFgL._SY342_.jpg" width="250px" />
-           <p>A Sutil Arte de Ligar o F*da-Se</p><!--descrição do livro-->
-           <h4 style="color: brown;">R$ 34,26</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/dcsnzYB">Comprar</a></button>
-          </div><!--fim da div livro--> 
-          <div class="livro"> <!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/71qfpSQlprL._SL1360_.jpg" width="250px" />
-            <p> A Ilha do Tesouro </p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 26,63</h4>
-            <button type="button" id="btn-comprar"><a href=https://www.amazon.com.br/Ilha-Tesouro-Especial-marcador-p%C3%A1ginas/dp/6587817777>Comprar</a></button>
-          </div><!--fim da div livro--> 
-           <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/71Fm+YuSYML._SL1500_.jpg" width="250px" />        
-            <p>Alerta vermelho</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 35,90</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/4OOnZXY">Comprar</a></button>
-          </div><!--fim da div livro--> 
-           <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/81wkQljSoiL._SL1500_.jpg" width="250px" />           
-            <p>Depois daquele verão</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 35,82</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/14G7WTS">Comprar</a></button>
-          </div><!--fim da div livro-->           
-           <div class="livro"><!--essa div fica a indicação de livro-->
-            <img class="img" src="https://m.media-amazon.com/images/I/413LtOnaVmS._SY445_SX342_.jpg" width="250px" />
-            <p>Cadê você Bernadette?</p><!--descrição do livro-->
-            <h4 style="color: brown;">R$ 58,81</h4>
-            <button type="button" id="btn-comprar"><a href="https://a.co/d/ahjIcd0">Comprar</a></button>
-          </div><!--fim da div livro-->
-      </div><!--fim da div biblioteca-->
+      </div>
+    </div> 
+     <div class="opcoes">           
+            <ul>           
+              <li><a class="a-li" href="comedia.html">Comédia</a></li>              
+              <li><a class="a-li" href="romance.html">Romance</a></li>             
+              <li><a class="a-li" href="acao.html">Ação</a></li>            
+              <li><a class="a-li" href="suspense.html">Suspense</a></li>                   
+              <li><a class="a-li" href="ajuda.html">Ajuda</a></li>
+              <li><a class="a-li" href="#">Sobre</a></li> 
+              <li><a class="a-li" href="#">Contato</a></li>
+            </ul>      
+        </div>  
+        <hr size="1" />
+  
+        <div class="biblioteca">
+           <div class="container">
+            <div class="row">
+            <div class="col-sm">
+               <div class="livro">
+               <img class="img" src="https://m.media-amazon.com/images/I/41jl+tSzfqL._SY445_SX342_.jpg" width="250px" /><!--imagem da capa do livro-->
+               <p>Epaminondas: O gato explicador</p><!--descrição do livro-->
+               <h4 style="color: brown;">R$ 28,95</h4><!--titlulo com o preço do livro-->
+              <button type="button" id="btn-comprar"><a href="https://a.co/d/7nxu8Gd">Comprar</a></button><!--botão que direciona para o site de compra-->
+               </div> 
+            </div>
+
+            <div class="col-sm">
+              <div class="livro">
+              <img class="img" src="https://m.media-amazon.com/images/I/71vbRyfPiXL._SL1500_.jpg" width="250px" />
+              <p> Nexus</p><!--descrição do livro-->
+              <h4 style="color: brown;">R$ 80,98</h4>
+              <button type="button" id="btn-comprar"><a href="https://a.co/d/dd0SEtN">Comprar</a></button>
+          </div>
+            </div>
+
+            <div class="col-sm">
+               <div class="livro">
+               <img class="img" src="https://m.media-amazon.com/images/I/81ehvI03NYS._SL1500_.jpg" width="250px" />          
+               <p> A psicologia financeira</p><!--descrição do livro-->
+               <h4 style="color: brown;">R$ 32,75</h4>
+               <button type="button" id="btn-comprar"><a href="https://a.co/d/ePIQm33">Comprar</a></button>
+          </div>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-sm"> 
+              <div class="livro">
+               <img class="img" src="https://m.media-amazon.com/images/I/71LBtlVGqHL._SL1500_.jpg" width="250px" />
+               <p> A cirurgiã</p><!--descrição do livro-->
+               <h4 style="color: brown;">R$ 23,30</h4>
+               <button type="button" id="btn-comprar"><a href="https://a.co/d/9guB674">Comprar</a></button>
+              </div>  
+            </div>
+
+            <div class="col-sm">
+              <div class="livro">
+                <img class="img" src="https://m.media-amazon.com/images/I/81-Ke-SYu2L._SL1500_.jpg" width="250px" />      
+                <p>Aurora ascende: 1</p><!--descrição do livro-->
+                <h4 style="color: brown;">R$ 44,19</h4>
+                <button type="button" id="btn-comprar"><a href="https://a.co/d/ecqhaY0">Comprar</a></button>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <div class="livro">
+                <img class="img" src="https://m.media-amazon.com/images/I/71Xta4Nf7uL._SL1360_.jpg" width="250px" />          
+                <p>Orgulho e Preconceito</p><!--descrição do livro-->
+                <h4 style="color: brown;">R$ 14,40</h4>
+                <button type="button" id="btn-comprar"><a href="https://a.co/d/3H5iRu7">Comprar</a></button>
+              </div> 
+            </div>
+            
+            </div>
+
+            <div class="row">
+            <div class="col-sm">
+              <div class="livro">
+                <img class="img" src="https://m.media-amazon.com/images/I/71zjlOS6ILL._SL1280_.jpg" width="250px" />    
+                <p> Não Confie em Ninguém</p><!--descrição do livro-->
+                <h4 style="color: brown;">R$ 52,84</h4>
+                <button type="button" id="btn-comprar"><a href="https://a.co/d/eny1PUk">Comprar</a></button>
+              </div> 
+            </div>
+            <div class="col-sm">
+              <div class="livro"> 
+                <img class="img" src="https://m.media-amazon.com/images/I/71qfpSQlprL._SL1360_.jpg" width="250px" />
+                <p> A Ilha do Tesouro </p><!--descrição do livro-->
+                <h4 style="color: brown;">R$ 26,63</h4>
+                <button type="button" id="btn-comprar"><a href=https://www.amazon.com.br/Ilha-Tesouro-Especial-marcador-p%C3%A1ginas/dp/6587817777>Comprar</a></button>
+              </div> 
+            </div>
+            <div class="col-sm">
+              <div class="livro"> 
+                <img class="img" src="https://m.media-amazon.com/images/I/6175IU0qFgL._SY342_.jpg" width="250px" />
+               <p>A Sutil Arte de Ligar o F*da-Se</p><!--descrição do livro-->
+               <h4 style="color: brown;">R$ 34,26</h4>
+                <button type="button" id="btn-comprar"><a href="https://a.co/d/dcsnzYB">Comprar</a></button>
+              </div>
+            </div>
+            </div>
+           </div>
+        </div>
+
+   
     <br>
     <br>
-  </main><!--fim main principal-->
+  </main>
   <footer>
     SYSTEM.BOOK
     <div class="i2">
-            <!--icones das redes sociais-->
             <i class="fa-brands fa-instagram i2"></i>
             <i class="fa-brands fa-facebook i2"></i>
             <i class="fa-brands fa-google i2"></i>
-    </div><!--fim da div das redes-->
+    </div>
     
    </footer>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
