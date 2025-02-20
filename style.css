@@ -22,28 +22,6 @@ h3 {
   color: white;
   padding: 0px;
 }
-.menu {
-  background-color: rgb(0, 0, 0);/* Fundo com gradiente */
-  height: 100px; /* Altura do menu */
-  grid-template-columns: auto auto auto;
-  gap: 100px;
-  display: grid;
-  padding: 20px 0;
-}
-.logo{
-  margin: 0 auto;
-}
-form input {
-  margin: 0 auto;
-  width: 350px;/* Largura total */
-  height: 50px;/* Altura do campo */
-  background-color: #ffffff; /* Fundo branco */
-  border: none;  /* Remove borda */
-  border-radius: 50px; /* Bordas arredondadas */
-  color: rgb(0, 0, 0); /* Cor do texto */
-  font-size: 25px;  /* Tamanho da fonte */
-  padding-left: 20px; /* Espaçamento à esquerda dentro do campo */
-}
 .icone{
   margin: 0 auto;
 }

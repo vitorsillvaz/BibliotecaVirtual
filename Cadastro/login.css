@@ -12,7 +12,8 @@ body {
   display: block;
 }
 nav{
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  
 }
 h1{
    font-family: Arial, Helvetica, sans-serif;
