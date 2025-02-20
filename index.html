@@ -7,7 +7,6 @@
   <title>Biblioteca</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icone_livros.png" whith="100px" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
@@ -23,12 +22,40 @@
         </a>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border: none;"> <img width="48" height="50" src="https://img.icons8.com/material-sharp/48/FFFFFF/shopping-cart.png" alt="shopping-cart"/></button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border: none;"> <img width="48" height="50" src="https://img.icons8.com/material-sharp/48/FFFFFF/shopping-cart.png" alt="carrinho"/></button>
         </form>
         </nav>
-
         
-       
+        <ul class="nav justify-content-center" id="nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorias</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">eBooks</a>
+              <a class="dropdown-item" href="#Biografias">Biografias</a>
+              <a class="dropdown-item" href="#">Infantil</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">outros...</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Literatura">Literatura Brasileira</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Biografias">Biografias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Ficção">Ficção</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mais Vendidos</a>
+          </li>
+        </ul>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; margin: 0 auto;">
       <ol class="carousel-indicators">
@@ -56,107 +83,158 @@
         <span class="sr-only">Próximo</span>
       </a>
         </div>
+        
+      <br><hr><br>
 
-        <div class="biblioteca">
-          
-           <div class="container"><h1>LIVRARIA</h1><br>
+        <div class="container" style="text-align: center;">
+            <h1 id="Literatura">LITERATURA BRASILEIRA</h1><br>
             <div class="row">
-              <div class="col-sm">
-                <div class="livro"> 
-                  <img class="img" src="https://m.media-amazon.com/images/I/6175IU0qFgL._SY342_.jpg" width="250px" />
-                 <p>A Sutil Arte de Ligar o F*da-Se</p><!--descrição do livro-->
-                 <h4 style="color: brown;">R$ 34,26</h4>
-                  <button type="button" id="btn-comprar"><a href="https://a.co/d/dcsnzYB">Comprar</a></button>
+              <div class="col-3">
+               <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/148199421-300-300/2112281834.jpg?v=638144333193470000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">A hora da estrela</h5>
+                    <p class="card-text">R$ 34,90</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
                 </div>
               </div>
-            <div class="col-sm">
-               <div class="livro">
-               <img class="img" src="https://m.media-amazon.com/images/I/41jl+tSzfqL._SY445_SX342_.jpg" width="250px" /><!--imagem da capa do livro-->
-               <p>Epaminondas: O gato explicador</p><!--descrição do livro-->
-               <h4 style="color: brown;">R$ 28,95</h4><!--titlulo com o preço do livro-->
-              <button type="button" id="btn-comprar"><a href="https://a.co/d/7nxu8Gd">Comprar</a></button><!--botão que direciona para o site de compra-->
-               </div> 
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/114659024-300-300/42887676.jpg?v=637969366160330000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">Olhos D'água</h5>
+                    <p class="card-text">R$ 32,00</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/148185312-300-300/46786250.jpg?v=638144309536330000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">Textos cruéis demais...</h5>
+                    <p class="card-text">R$ 59,90</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/156488700-300-300/2112337684.jpg?v=638295952580070000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">Salvar o fogo</h5>
+                    <p class="card-text">R$ 76,90</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="col-sm">
-              <div class="livro">
-              <img class="img" src="https://m.media-amazon.com/images/I/71vbRyfPiXL._SL1500_.jpg" width="250px" />
-              <p> Nexus</p><!--descrição do livro-->
-              <h4 style="color: brown;">R$ 80,98</h4>
-              <button type="button" id="btn-comprar"><a href="https://a.co/d/dd0SEtN">Comprar</a></button>
-          </div>
-            </div>
-
-            <div class="col-sm">
-               <div class="livro">
-               <img class="img" src="https://m.media-amazon.com/images/I/81ehvI03NYS._SL1500_.jpg" width="250px" />          
-               <p> A psicologia financeira</p><!--descrição do livro-->
-               <h4 style="color: brown;">R$ 32,75</h4>
-               <button type="button" id="btn-comprar"><a href="https://a.co/d/ePIQm33">Comprar</a></button>
-          </div>
-            </div>
-
-           <div class="col-sm">
-              <div class="livro">
-                <img class="img" src="https://m.media-amazon.com/images/I/71zjlOS6ILL._SL1280_.jpg" width="250px" />    
-                <p> Não Confie em Ninguém</p><!--descrição do livro-->
-                <h4 style="color: brown;">R$ 52,84</h4>
-                <button type="button" id="btn-comprar"><a href="https://a.co/d/eny1PUk">Comprar</a></button>
-              </div> 
-            </div>
-            </div>
+             <br><hr><br>
+             <h1 id="Biografias">BIOGRAFIAS</h1><br>
             <div class="row">
-              <div class="col-sm">
-                <div class="livro"> 
-                  <img class="img" src="https://m.media-amazon.com/images/I/71qfpSQlprL._SL1360_.jpg" width="250px" />
-                  <p> A Ilha do Tesouro </p><!--descrição do livro-->
-                  <h4 style="color: brown;">R$ 26,63</h4>
-                  <button type="button" id="btn-comprar"><a href=https://www.amazon.com.br/Ilha-Tesouro-Especial-marcador-p%C3%A1ginas/dp/6587817777>Comprar</a></button>
-                </div> 
+              <div class="col-3">
+               <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/148199421-300-300/2112281834.jpg?v=638144333193470000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">Em busca de mim</h5>
+                    <p class="card-text">R$ 49,90</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
               </div>
-            <div class="col-sm">
-              <div class="livro"> 
-                <img class="img" src="https://m.media-amazon.com/images/I/71qfpSQlprL._SL1360_.jpg" width="250px" />
-                <p> A Ilha do Tesouro </p><!--descrição do livro-->
-                <h4 style="color: brown;">R$ 26,63</h4>
-                <button type="button" id="btn-comprar"><a href=https://www.amazon.com.br/Ilha-Tesouro-Especial-marcador-p%C3%A1ginas/dp/6587817777>Comprar</a></button>
-              </div> 
-            </div>
-            <div class="col-sm"> 
-              <div class="livro">
-               <img class="img" src="https://m.media-amazon.com/images/I/71LBtlVGqHL._SL1500_.jpg" width="250px" />
-               <p> A cirurgiã</p><!--descrição do livro-->
-               <h4 style="color: brown;">R$ 23,30</h4>
-               <button type="button" id="btn-comprar"><a href="https://a.co/d/9guB674">Comprar</a></button>
-              </div>  
-            </div>
-
-            <div class="col-sm">
-              <div class="livro">
-                <img class="img" src="https://m.media-amazon.com/images/I/81-Ke-SYu2L._SL1500_.jpg" width="250px" />      
-                <p>Aurora ascende: 1</p><!--descrição do livro-->
-                <h4 style="color: brown;">R$ 44,19</h4>
-                <button type="button" id="btn-comprar"><a href="https://a.co/d/ecqhaY0">Comprar</a></button>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/149429713-300-300/2112321629.jpg?v=638155235418270000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">Quarto de despejo</h5>
+                    <p class="card-text">R$ 92,00</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/148174320-300-300/29803045.jpg?v=638144289877100000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">A outra face</h5>
+                    <p class="card-text">R$ 91,00</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/156488727-300-300/2112337708.jpg?v=638301535140400000" alt="Imagem de capa do card">
+                  <div class="card-body">
+                    <h5 class="card-title">Elon Musk</h5>
+                    <p class="card-text">R$ 99,90</p>
+                    <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="col-sm">
-              <div class="livro">
-                <img class="img" src="https://m.media-amazon.com/images/I/71Xta4Nf7uL._SL1360_.jpg" width="250px" />          
-                <p>Orgulho e Preconceito</p><!--descrição do livro-->
-                <h4 style="color: brown;">R$ 14,40</h4>
-                <button type="button" id="btn-comprar"><a href="https://a.co/d/3H5iRu7">Comprar</a></button>
-              </div> 
-            </div>
-            
-            </div>
+            <br><hr><br>
+            <h1 id="Ficção">FICÇÃO</h1><br>
+           <div class="row">
+             <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                 <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/156523996-300-300/2112364084.jpg?v=638658657718600000" alt="Imagem de capa do card">
+                 <div class="card-body">
+                   <h5 class="card-title">Warbreaker</h5>
+                   <p class="card-text">R$ 159,90</p>
+                   <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-3">
+               <div class="card" style="width: 18rem;">
+                 <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/156523857-300-300/2112363933.jpg?v=638655201369370000" alt="Imagem de capa do card">
+                 <div class="card-body">
+                   <h5 class="card-title">A melodia da água</h5>
+                   <p class="card-text">R$ 59,90</p>
+                   <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-3">
+               <div class="card" style="width: 18rem;">
+                 <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/156523455-300-300/2112363469.jpg?v=638648292981770000" alt="Imagem de capa do card">
+                 <div class="card-body">
+                   <h5 class="card-title">História do ladrão..</h5>
+                   <p class="card-text">R$ 99,90</p>
+                   <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-3">
+               <div class="card" style="width: 18rem;">
+                 <img class="card-img-top" src="https://livrariacultura.vteximg.com.br/arquivos/ids/156523996-300-300/2112364084.jpg?v=638658657718600000" alt="Imagem de capa do card">
+                 <div class="card-body">
+                   <h5 class="card-title">A curandeira de Zalindov</h5>
+                   <p class="card-text">R$ 99,90</p>
+                   <a href="#" class="btn btn-primary" id="btn-comprar">COMPRAR</a>
+                 </div>
+               </div>
+             </div>
            </div>
+           <br><hr><br>
         </div>
 
   </main>
+  <hr>
+  <!-- Footer -->
+  <footer class="text-white py-4">
+    <div class="container text-center">
+      <p style="color: rgb(93, 94, 93);">&copy; 2025 SystemBOOK. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>
