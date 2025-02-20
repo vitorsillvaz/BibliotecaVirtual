@@ -24,14 +24,17 @@ h1{
 .container{
   position: relative;
   height: 100vh;  /* Altura da tela */
-  
 }
 .signup-screen{
   position: absolute;
-  top: 40%;       /* Coloca no meio da tela verticalmente */
+  top: 50%;       /* Coloca no meio da tela verticalmente */
   left: 50%;      /* Coloca no meio da tela horizontalmente */
   transform: translate(-50%, -50%); /* Ajusta para o centro exato */
   width: 50vh;
+  border: 1px solid rgba(0, 128, 0, 0.212);
+  border-radius: 50px;
+  padding: 50px;
+  background-color: #ffffff;
 }
 #gg{
   border: 1px solid rgba(0, 0, 0, 0.24);

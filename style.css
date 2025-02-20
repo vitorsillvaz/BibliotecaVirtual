@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -66,10 +69,25 @@ p {
   border: 1px solid #00a808;
   color: #ffffff;
 }
+.rounded-circle{
+  width: 150px;
+  height: 150px;
+  transition: transform 0.1s
+}
+.rounded-circle:hover{
+  transform: scale(1.05)
+}
+.carousel-item img {
+  margin-right: 50px; /* Espaçamento à direita de cada imagem */
+}
+
+.carousel-item img:last-child {
+  margin-right: 0; /* Remove o espaço extra após a última imagem */
+}
 @media (max-width: 600px) {
   .log{
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 30px;
   }
   .opcoes{
     width: 60vh;
@@ -88,5 +106,23 @@ p {
   li{
     padding: 1px 0px;
     border-radius: 5px;
+  }
+  .row .col-3 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .col-3 {
+    width: 100%; 
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: center; 
   }
 }
