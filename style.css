@@ -108,17 +108,11 @@ p {
     border-radius: 5px;
   }
   .row .col-3 {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
     text-align: center;
   }
   .row {
-    display: flex;
-    flex-direction: column;
     align-items: center; 
   }
-
   .col-3 {
     width: 100%; 
     margin-bottom: 20px; 
