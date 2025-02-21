@@ -7,6 +7,8 @@
 }
 h1{
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-top: 50px;
 }
 html {
   scroll-behavior: smooth;
@@ -79,7 +81,13 @@ p {
   color: #ffffff;
 }
 .row{
-  margin-bottom: 50px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+.card{
+  margin: 0 auto;
 }
 .carousel-inner{
   margin-bottom: 60px;
