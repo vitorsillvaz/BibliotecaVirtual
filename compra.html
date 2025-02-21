@@ -29,7 +29,7 @@
       <!-- Formulário de Pagamento e Envio -->
       <div class="col">
         <h4 class="mb-3">Informações de Envio</h4>
-        <form action="index.html">
+        <form>
           <!-- Nome Completo -->
           <div class="mb-3">
             <label for="nome" class="form-label">Nome Completo</label>
@@ -72,7 +72,12 @@
           </div>
   
           <!-- Botão de Finalizar -->
-          <button type="submit" class="btn btn-primary" id="btn-comprar">Finalizar Compra</button>
+          <button type="button" class="btn btn-primary" id="btn-comprar" onclick="Mensagem()">Finalizar Compra</button>
+          <button type="reset" class="btn" id="btn-comprar" style="background-color: rgb(255, 255, 255); color: black; border: 1px solid rgba(0, 0, 0, 0.274); margin-top: 2px;">Cancelar</button>
+          <!-- Mensagem de sucesso -->
+          <div id="mensagem" class="alert alert-success mt-3 d-none">
+            Parabéns! Compra realizada com sucesso.
+          </div>
         </form>
       </div>
   
@@ -91,7 +96,12 @@
     </div>
   </footer>
   
-
+  <script>
+    function Mensagem() {
+        document.getElementById("mensagem").classList.remove("d-none"); // Exibe a mensagem
+    }
+</script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
