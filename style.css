@@ -75,7 +75,7 @@ p {
   font-size: 20px;
   font-weight: bolder;
 }
-#btn-comprar:hover, .card-img-top:hover{
+#btn-comprar:hover, .card-img-top:hover, #carr:hover{
   background-color: #00a808;
   border: 1px solid #00a808;
   color: #ffffff;

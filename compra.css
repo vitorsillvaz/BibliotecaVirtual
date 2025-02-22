@@ -29,12 +29,14 @@
   }
   #btn-comprar:hover, .card-img-top:hover{
     background-color: #036908;
-    border: 1px solid #ffffff;
     color: #ffffff;
   }
   .container{
     margin: 0 auto;
     padding: 50px;
+  }
+  #carr:hover{
+    background-color: #00a808;
   }
   @media (max-width: 600px) {
     .log{
