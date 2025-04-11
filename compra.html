@@ -87,6 +87,38 @@
                   <input type="text" class="form-control" id="cvv" placeholder="123" required>
                 </div>
               </div>
+              <br>
+              <!--Calcular Frete-->
+              <h4 class="mb-3">Calcular Frete</h4>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="vencimento" class="form-label">Valor do livro:</label>
+                  <input type="number" class="form-control" name="txtValor" id="txtValor" />
+                  <input type="button" value="Calcular" id="frt" onclick="calcular()" />
+
+                  <div id="res">
+                    <script>
+
+                      function calcular() {
+                        var txtv = document.querySelector("input#txtValor");
+                        var res = document.querySelector("div#res");
+                        var vel = Number(txtv.value);
+
+                        if (vel > 60) {
+                          res.innerHTML +=
+                            "<p>Valor do frete: R$ 0,00</p>";
+                        } else {
+                          res.innerHTML += "<p>Valor do frete: R$ 15,00</p>";
+                        }
+
+                      }
+                    </script>
+                    </div>
+
+                </div>
+
+
+              </div>
 
               <!-- Botão de Finalizar -->
               <button type="button" class="btn btn-primary" id="btn-comprar" onclick="Mensagem()">Finalizar
