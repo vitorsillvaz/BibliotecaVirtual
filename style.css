@@ -121,11 +121,20 @@ footer p {
 }
 @media (max-width: 600px) {
   .log{
-    width: 130px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
   }
   .form-control{
     display: none;
+  }
+  .carousel-inner{
+    margin-bottom: 0;
+  }
+  br, hr{
+    display: none;
+  }
+  .vm{
+    margin-bottom: 40px;
   }
   .opcoes{
     width: 60vh;
@@ -149,12 +158,16 @@ footer p {
     text-align: center;
   }
   .row {
-    align-items: center; 
+    align-items: center;
+    padding: 0; 
   }
   .col-3 {
     width: 100%; 
     margin-bottom: 20px; 
     display: flex;
     justify-content: center; 
+  }
+  .esc , #Escritores{
+    display: none;
   }
 }
