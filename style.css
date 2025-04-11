@@ -27,9 +27,6 @@ body {
 main{
   flex: 1;
 }
-.navbar{
-   padding: 30px;
-}
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
   visibility: visible;
@@ -132,7 +129,7 @@ footer p {
   }
   .nav2{
     display: flex;
-  }
+    }
   #nav{
     display: none;
   }
