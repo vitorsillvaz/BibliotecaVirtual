@@ -124,6 +124,9 @@ footer p {
     width: 130px;
     height: 30px;
   }
+  .form-control{
+    display: none;
+  }
   .opcoes{
     width: 60vh;
     font-size: 10px;
